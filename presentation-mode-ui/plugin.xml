@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension-point id="org.gap.presentationmode.editorThemePlugin" name="Presentation Mode Editor Theme Plugin" schema="schema/org.gap.presentationmode.editorThemePlugin.exsd"/>
+   <extension
+         point="org.eclipse.ui.commands">
+      <category
+            id="presentation-mode-ui.category"
+            name="Presentation Mode">
+      </category>
+      <command
+            categoryId="presentation-mode-ui.category"
+            defaultHandler="org.gap.presentationmode.ui.commands.ToggleHandler"
+            id="presentation-mode-ui.toggle-mode"
+            name="Toggle">
+         <state
+               class="org.eclipse.ui.handlers.RegistryToggleState"
+               id="org.eclipse.ui.commands.toggleState">
+            <class
+                  class="org.eclipse.ui.handlers.RegistryToggleState">
+               <parameter
+                     name="persisted"
+                     value="true">
+               </parameter>
+               <parameter
+                     name="default"
+                     value="false">
+               </parameter>
+            </class>
+         </state>
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            allPopups="false"
+            locationURI="toolbar:org.eclipse.ui.main.toolbar?after=additions">
+         <toolbar
+               id="presentation-mode-ui.toolbar"
+               label="Presentation Mode">
+            <command
+                  commandId="presentation-mode-ui.toggle-mode"
+                  icon="icons/pm-toggle.png"
+                  id="presentation-mode-ui.toggle-mode"
+                  style="toggle">
+            </command>
+         </toolbar>
+      </menuContribution>
+   </extension>
+   <extension
+         point="org.eclipse.ui.preferencePages">
+      <page
+            class="org.gap.presentationmode.ui.pref.PreferencePage"
+            id="presentation-mode-ui.preferencePage"
+            name="Presentation Mode">
+      </page>
+   </extension>
+
+</plugin>
