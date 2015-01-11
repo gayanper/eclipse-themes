@@ -1,4 +1,4 @@
-package org.gap.presentationmode.ui;
+package org.gap.eclipse.themes.pm;
 
 import org.eclipse.ui.plugin.AbstractUIPlugin;
 import org.osgi.framework.BundleContext;
@@ -9,7 +9,7 @@ import org.osgi.framework.BundleContext;
 public class Activator extends AbstractUIPlugin {
 
 	// The plug-in ID
-	public static final String PLUGIN_ID = "presentation-mode-ui"; //$NON-NLS-1$
+	public static final String PLUGIN_ID = "org.gap.eclipse.themes.pm"; //$NON-NLS-1$
 
 	// The shared instance
 	private static Activator plugin;

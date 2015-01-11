@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.e4.ui.css.swt.theme">
+      <theme
+            basestylesheeturi="css/mdark/dark.css"
+            id="org.gap.eclipse.themes.material-dark"
+            label="Material Dark">
+      </theme>
+      <stylesheet
+            uri="css/mdark/syntax.css">
+         <themeid
+               refid="org.gap.eclipse.themes.material-dark">
+         </themeid>
+         <osgiresourcelocator
+               uri="platform:/plugin/org.gap.eclipse.themes/images/">
+         </osgiresourcelocator>
+      </stylesheet>
+      <theme
+            basestylesheeturi="css/mlight/light.css"
+            id="org.gap.eclipse.themes.material-light"
+            label="Material Light">
+      </theme>
+      <stylesheet
+            uri="css/mlight/syntax.css">
+         <themeid
+               refid="org.gap.eclipse.themes.material-light">
+         </themeid>
+         <osgiresourcelocator
+               uri="platform:/plugin/org.gap.eclipse.themes/images/">
+         </osgiresourcelocator>
+      </stylesheet>
+   </extension>
+</plugin>

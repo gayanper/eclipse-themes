@@ -1,0 +1,151 @@
+.MTrimmedWindow {
+    background-color: #607D8B;
+}
+
+.Draggable {
+	handle-image: url('./dragHandle.png');
+}
+
+#org-eclipse-ui-main-toolbar,
+#org-eclipse-ui-trim-status,
+#org-eclipse-ui-trim-vertical1,
+#org-eclipse-ui-trim-vertical2,
+#org-eclipse-ui-HeapStatus {
+    background-color: #607D8B;
+}
+
+#PerspectiveSwitcher {
+    background-color: #546E7A;
+	eclipse-perspective-keyline-color: #546E7A;
+}
+
+#SearchField Text {
+    background-color: #CFD8DC;
+}
+
+.MToolControl.TrimStack {
+    frame-image:  url('./vsFrame.png');
+    handle-image:  url('./dragHandle.png');
+    frame-cuts: 0px 0px 6px 16px;
+}
+
+.MPart.busy {
+	font-style: italic;
+}
+
+.MPart.highlighted {
+	font-weight: bold;
+}
+
+/* Styles for editors */
+.Editor Canvas {
+    background-color: #293134;
+}
+
+/* Styles for tabs folders */
+.MPartStack {
+	swt-tab-renderer: url('bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.CTabRendering');
+    swt-selected-tab-fill: #455A64 #455A64 100% 100%;
+	swt-unselected-tabs-color: #607D8B #607D8B 100% 100%;
+	swt-outer-keyline-color: #607D8B;
+	swt-inner-keyline-color: #607D8B;
+	swt-tab-outline: #455A64;
+    background-color: #455A64;
+	padding: 0px 2px 2px;
+	swt-shadow-visible: false;
+	swt-mru-visible: false;
+	color: #000000;
+	swt-simple: false;
+	swt-corner-radius: 6;
+    swt-tab-height: 28px;
+}
+
+.MPartStack.active {
+	swt-selected-tab-fill: #455A64 #455A64 100% 100%;
+	swt-tab-outline: #455A64;
+    background-color: #455A64;
+}
+
+CTabItem:selected {
+	color: #ffffff;
+}
+
+.MPart CTabItem:selected {
+	color: #000000;
+}
+
+/* Styles for views */
+.View Tree,
+.View StyledText,
+.View Composite,
+.View Table {
+    background-color: #ededed 53.7% #f7f7f7 53.7%;
+}
+
+.MPart Section,
+.MPart Sash,
+.MPart DependenciesComposite-DependenciesListComposite,
+.MPart DependenciesComposite-PropertiesListComposite,
+.MPart DependenciesComposite,
+.MPart DependenciesComposite > *,
+.MPart SashForm > *,
+.MPart Form ScrolledPageBook,
+.MPart Form > LayoutComposite,
+.MPart Form > LayoutComposite > *,
+.MPart Form > Link,
+.MPart Form > LayoutComposite Label,
+.MPart Form > LayoutComposite Hyperlink,
+.MPart Form > LayoutComposite ListEditorComposite,
+.MPart Form > LayoutComposite Table,
+.MPart Form > LayoutComposite LayoutComposite,
+.MPart Form > LayoutComposite Composite,
+.MPart Form > LayoutComposite Text,
+.MPart Form > LayoutComposite StyledText,
+.MPart Form > LayoutComposite ToolBar,
+.MPart LayoutComposite > * > LayoutComposite > Section > LayoutComposite > * {
+    background-color: #ededed;
+}
+
+.MPartStack.active .MPart Section,
+.MPartStack.active .MPart Sash,
+.MPartStack.active .MPart DependenciesComposite-DependenciesListComposite,
+.MPartStack.active .MPart DependenciesComposite-PropertiesListComposite,
+.MPartStack.active .MPart DependenciesComposite,
+.MPartStack.active .MPart DependenciesComposite > *,
+.MPartStack.active .MPart SashForm > *,
+.MPartStack.active .MPart Form ScrolledPageBook,
+.MPartStack.active .MPart Form > LayoutComposite,
+.MPartStack.active .MPart Form > LayoutComposite > *,
+.MPartStack.active .MPart Form > Link,
+.MPartStack.active .MPart Form > LayoutComposite Label,
+.MPartStack.active .MPart Form > LayoutComposite Hyperlink,
+.MPartStack.active .MPart Form > LayoutComposite ListEditorComposite,
+.MPartStack.active .MPart Form > LayoutComposite LayoutComposite,
+.MPartStack.active .MPart Form > LayoutComposite Composite,
+.MPartStack.active .MPart Form > LayoutComposite ToolBar,
+.MPartStack.active .MPart Form LayoutComposite,
+.MPartStack.active .MPart LayoutComposite > * > LayoutComposite > Section > LayoutComposite > * {
+    background-color: #ededed;
+}
+
+.MPart Form > LayoutComposite Tree,
+.MPart Form > LayoutComposite Table,
+.MPart Form > LayoutComposite Text,
+.MPart Form > LayoutComposite StyledText {
+    background-color: #f7f7f7;
+}
+
+.MPartStack.active .MPart Form > LayoutComposite Tree,
+.MPartStack.active .MPart Form > LayoutComposite Table,
+.MPartStack.active .MPart Form > LayoutComposite Text,
+.MPartStack.active .MPart Form > LayoutComposite StyledText {
+    background-color: #f7f7f7;
+}
+
+
+
+/* Styles for plugins */
+/* Mylyn */
+#org-eclipse-mylyn-tasks-ui-trim-container TaskScalingHyperlink {
+	color: #ECEFF1;
+}
