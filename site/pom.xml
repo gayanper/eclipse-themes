@@ -8,7 +8,7 @@
     <version>0.0.1-SNAPSHOT</version>
   </parent>
   <groupId>org.gap.eclipse.themes</groupId>
-  <artifactId>org.gap.eclipse.themes.pm</artifactId>
-  <version>1.0.0-SNAPSHOT</version>
-  <packaging>eclipse-plugin</packaging>
+  <artifactId>site</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>eclipse-repository</packaging>
 </project>
