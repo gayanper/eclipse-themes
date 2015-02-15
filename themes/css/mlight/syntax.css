@@ -1,4 +1,3 @@
-
 IEclipsePreferences#org-eclipse-jdt-ui {
     preferences:
         'content_assist_proposals_background=252,252,25'
@@ -78,19 +77,19 @@ IEclipsePreferences#org-eclipse-ui-editors {
     'AbstractTextEditor.Color.SelectionForeground=0,0,0'
     'AbstractTextEditor.Color.SelectionForeground.SystemDefault=false'
     'asOccurencesIndicationColor=239,239,239'
-    'currentIPColor=188,173,173'
+    'currentIPColor=238,229,192'
     'currentLineColor=238,238,238'
     'deletionIndicationColor=155,86,86'
     'filteredSearchResultIndicationColor=239,239,239'
     'lineNumberColor=97,97,97'
     'lineNumberRuler=true'
     'matchingTagIndicationColor=239,239,239'
-    'occurrenceIndicationColor=239,239,239'
+    'occurrenceIndicationColor=238,229,192'
     'printMargin=true'
     'printMarginColor=97,97,97'
     'searchResultIndicationColor=239,239,239'
-    'secondaryIPColor=188,173,173'
-    'writeOccurrenceIndicationColor=239,239,239'
+    'secondaryIPColor=238,229,192'
+    'writeOccurrenceIndicationColor=187,223,235'
     'nocoverage_color=248,165,165'
     'nocoverage_stylePreferences=NONE'
     'nocoverage_text=false'

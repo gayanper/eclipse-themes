@@ -147,5 +147,5 @@ CTabItem:selected {
 /* Styles for plugins */
 /* Mylyn */
 #org-eclipse-mylyn-tasks-ui-trim-container TaskScalingHyperlink {
-	color: #ECEFF1;
+	color: #000000;
 }
