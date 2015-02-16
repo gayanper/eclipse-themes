@@ -149,3 +149,8 @@ CTabItem:selected {
 #org-eclipse-mylyn-tasks-ui-trim-container TaskScalingHyperlink {
 	color: #ECEFF1;
 }
+
+/* JDT */
+#org-eclipse-jdt-debug-ui-DisplayView StyledText {
+	background-color: #293134;
+}
