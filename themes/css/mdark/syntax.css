@@ -110,3 +110,27 @@ IEclipsePreferences#org-eclipse-ui-workbench {
       'org.eclipse.mylyn.tasks.ui.colors.category.gradient.end=237,237,237'
       'org.eclipse.mylyn.tasks.ui.colors.category.gradient.start=237,237,237'
 }
+
+IEclipsePreferences#org-eclipse-wst-xml-ui {
+  preferences:
+      'cdataBorder=#678CB1 | null | null | null | null | null'
+      'cdataText=#E0E2E4 | null | null | null | null | null'
+      'commentBorder=#7D8C93 | null | null | null | null | null'
+      'commentText=#7D8C93 | null | null | null | null | null'
+      'declBoder=#678CB1 | null | null | null | null | null'
+      'declBorder=#678CB1 | null | null | null | null | null'
+      'doctypeExternalId=#678CB1 | null | null | null | null | null'
+      'doctypeExternalPubref=#678CB1 | null | null | null | null | null'
+      'doctypeExtrenalSysref=#678CB1 | null | null | null | null | null'
+      'doctypeName=#678CB1 | null | null | null | null | null'
+      'entityReference=#93C763 | null | null | null | null | null'
+      'piBorder=#678CB1 | null | null | null | null | null'
+      'piContent=#E0E2E4 | null | null | null | null | null'
+      'tagAttributeEquals=#E0E2E4 | null | null | null | null | null'
+      'tagAttributeName=#678CB1 | null | false | null | null | null'
+      'tagAttributeValue=#EC7600 | null | null | null | null | null'
+      'tagBorder=#E0E2E4 | null | null | null | null | null'
+      'tagName=#E0E2E4 | null | null | null | null | null'
+      'xmlContent=#E0E2E4 | null | null | null | null | null'
+}
+
