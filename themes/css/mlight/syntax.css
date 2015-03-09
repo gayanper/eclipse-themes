@@ -112,3 +112,53 @@ IEclipsePreferences#org-eclipse-ui-workbench {
       'org.eclipse.mylyn.tasks.ui.colors.category.gradient.end=237,237,237'
       'org.eclipse.mylyn.tasks.ui.colors.category.gradient.start=237,237,237'
 }
+
+IEclipsePreferences#org-eclipse-e4-tools-css-editor-ui {
+	preferences:
+		'syntaxColorer.ClassID.color=104,128,70'
+		'syntaxColorer.Declaration.color=100,149,54'
+		'syntaxColorer.Element.color=104,128,70'
+		'syntaxColorer.error.color=126,1,1'
+		'syntaxColorer.keyword.color=160,130,189'
+		'syntaxColorer.number.color=146,103,154'
+		'syntaxColorer.string.color=146,103,154'
+}
+
+IEclipsePreferences#org-eclipse-xtend-ide {
+	preferences:
+		'syntaxColorer.comment.color=23,96,143'
+		'syntaxColorer.keyword.color=104,128,70'
+		'syntaxColorer.keyword.style=0'
+		'syntaxColorer.number.color=128,31,145'
+		'syntaxColorer.string.color=146,103,154'
+		'syntaxColorer.task.color=255,139,255'
+		'syntaxColorer.xbase.extension.method.invacation.color=138,42,5'
+		'syntaxColorer.xbase.annotation.color=128,128,128'
+		'syntaxColorer.xbase.field.color=86,104,116'
+		'syntaxColorer.xbase.static.field.color=86,104,116'
+		'syntaxColorer.xbase.static.field.style=0'
+		'syntaxColorer.xbase.static.method.invocation.style=0'
+		'syntaxColorer.xtend.active.annotation.color=160,130,189'
+		'syntaxColorer.xtend.insignificant.template.text.color=215,41,103'
+		'syntaxColorer.xtend.potential.line.break.color=0,0,0'
+		'syntaxColorer.xtend.richText.color=215,41,103'
+		'syntaxColorer.xtend.richText.delimiter.color=211,6,73'
+		'syntaxColorer.xtend.template.line.break.color=215,41,103'	
+	
+}
+
+IEclipsePreferences#org-eclipse-xtext-xtext-ui {
+	preferences:
+		'syntaxColorer.DataTypeIndicator.color=160,130,189'
+		'syntaxColorer.NeverCalledRule.color=247,111,32'
+		'syntaxColorer.RuleDeclaration.style=1'
+		'syntaxColorer.SpecialFeature.color=86,104,116'
+		'syntaxColorer.UnusedValue.color=247,111,32'
+		'syntaxColorer.comment.color=23,96,143'
+		'syntaxColorer.keyword.color=104,128,70'
+		'syntaxColorer.keyword.style=0'
+		'syntaxColorer.number.color=128,31,145'
+		'syntaxColorer.string.color=146,103,154'
+		'syntaxColorer.task.color=255,139,255'
+}
+

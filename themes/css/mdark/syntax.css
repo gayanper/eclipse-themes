@@ -134,3 +134,51 @@ IEclipsePreferences#org-eclipse-wst-xml-ui {
       'xmlContent=#E0E2E4 | null | null | null | null | null'
 }
 
+IEclipsePreferences#org-eclipse-e4-tools-css-editor-ui {
+	preferences:
+		'syntaxColorer.ClassID.color=147,199,99'
+		'syntaxColorer.Declaration.color=100,149,54'
+		'syntaxColorer.Element.color=147,199,99'
+		'syntaxColorer.error.color=126,1,1'
+		'syntaxColorer.keyword.color=160,130,189'
+		'syntaxColorer.number.color=236,188,0'
+		'syntaxColorer.string.color=236,188,0'
+}
+
+IEclipsePreferences#org-eclipse-xtend-ide {
+	preferences:
+		'syntaxColorer.comment.color=125,140,147'
+		'syntaxColorer.keyword.color=147,199,99'
+		'syntaxColorer.keyword.style=0'
+		'syntaxColorer.number.color=255,205,34'
+		'syntaxColorer.string.color=236,118,0'
+		'syntaxColorer.task.color=255,139,255'
+		'syntaxColorer.xbase.annotation.color=160,130,189'
+		'syntaxColorer.xbase.field.color=103,140,177'
+		'syntaxColorer.xbase.static.field.color=103,140,177'
+		'syntaxColorer.xbase.static.field.style=0'
+		'syntaxColorer.xbase.static.method.invocation.style=0'
+		'syntaxColorer.xtend.active.annotation.color=160,130,189'
+		'syntaxColorer.xtend.insignificant.template.text.color=236,118,160'
+		'syntaxColorer.xtend.potential.line.break.color=224,226,228'
+		'syntaxColorer.xtend.richText.color=236,118,160'
+		'syntaxColorer.xtend.richText.delimiter.color=249,39,108'
+		'syntaxColorer.xtend.template.line.break.color=236,118,160'	
+	
+}
+
+IEclipsePreferences#org-eclipse-xtext-xtext-ui {
+	preferences:
+		'syntaxColorer.DataTypeIndicator.color=160,130,189'
+		'syntaxColorer.NeverCalledRule.color=236,188,160'
+		'syntaxColorer.RuleDeclaration.style=1'
+		'syntaxColorer.SpecialFeature.color=103,140,177'
+		'syntaxColorer.UnusedValue.color=236,188,160'
+		'syntaxColorer.comment.color=125,140,147'
+		'syntaxColorer.keyword.color=147,199,99'
+		'syntaxColorer.keyword.style=0'
+		'syntaxColorer.number.color=255,205,34'
+		'syntaxColorer.string.color=236,188,0'
+		'syntaxColorer.task.color=255,139,255'
+}
+
