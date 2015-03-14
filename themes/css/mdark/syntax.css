@@ -158,12 +158,15 @@ IEclipsePreferences#org-eclipse-xtend-ide {
 		'syntaxColorer.xbase.static.field.color=103,140,177'
 		'syntaxColorer.xbase.static.field.style=0'
 		'syntaxColorer.xbase.static.method.invocation.style=0'
+		'syntaxColorer.xbase.extension.method.invacation.color=160,130,189'
 		'syntaxColorer.xtend.active.annotation.color=160,130,189'
 		'syntaxColorer.xtend.insignificant.template.text.color=236,118,160'
 		'syntaxColorer.xtend.potential.line.break.color=224,226,228'
 		'syntaxColorer.xtend.richText.color=236,118,160'
 		'syntaxColorer.xtend.richText.delimiter.color=249,39,108'
-		'syntaxColorer.xtend.template.line.break.color=236,118,160'	
+		'syntaxColorer.xtend.richText.bgColor=41,49,52'
+		'syntaxColorer.xtend.template.line.break.color=236,118,160'
+		'syntaxColorer.xtend.template.line.break.bgColor=41,49,52'	
 	
 }
 
