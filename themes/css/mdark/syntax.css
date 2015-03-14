@@ -109,6 +109,10 @@ IEclipsePreferences#org-eclipse-ui-workbench {
   preferences:
       'org.eclipse.mylyn.tasks.ui.colors.category.gradient.end=237,237,237'
       'org.eclipse.mylyn.tasks.ui.colors.category.gradient.start=237,237,237'
+      'INCOMING_COLOR=3,173,222'
+      'OUTGOING_COLOR=210,138,4'
+      'RESOLVED_COLOR=0,176,0'
+      'CONFLICTING_COLOR=204,0,0'
 }
 
 IEclipsePreferences#org-eclipse-wst-xml-ui {
