@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Eclipse Themes
 Bundle-SymbolicName: org.gap.eclipse.themes;singleton:=true
-Bundle-Version: 1.0.0.qualifier
+Bundle-Version: 1.1.0.qualifier
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Require-Bundle: org.eclipse.e4.ui.css.swt.theme;bundle-version="0.9.300"
 Eclipse-BundleShape: dir
