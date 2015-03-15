@@ -147,6 +147,7 @@ IEclipsePreferences#org-eclipse-e4-tools-css-editor-ui {
 		'syntaxColorer.keyword.color=160,130,189'
 		'syntaxColorer.number.color=236,188,0'
 		'syntaxColorer.string.color=236,188,0'
+		'syntaxColorer.error.color=224,226,228'
 }
 
 IEclipsePreferences#org-eclipse-xtend-ide {
@@ -189,3 +190,18 @@ IEclipsePreferences#org-eclipse-xtext-xtext-ui {
 		'syntaxColorer.task.color=255,139,255'
 }
 
+IEclipsePreferences#org-eclipse-pde-ui {
+	preferences:
+		'editor.color.default=224,226,228'
+		'editor.color.externalized_string=160,130,189'
+		'editor.color.externalized_string_bold=true'
+		'editor.color.header_assignment=224,226,228'
+		'editor.color.header_attributes=236,188,0'
+		'editor.color.header_key=160,130,189'
+		'editor.color.header_osgi=160,130,189'
+		'editor.color.header_value=224,226,228'
+		'editor.color.instr=147,199,99'
+		'editor.color.string=236,188,0'
+		'editor.color.tag=224,226,228'
+		'editor.color.xml_comment=63,127,95'
+}
