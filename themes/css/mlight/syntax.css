@@ -162,3 +162,10 @@ IEclipsePreferences#org-eclipse-xtext-xtext-ui {
 		'syntaxColorer.task.color=255,139,255'
 }
 
+IEclipsePreferences#org-eclipse-debug-ui {
+  preferences:
+	'org.eclipse.debug.ui.errorColor=183,28,28'
+	'org.eclipse.debug.ui.inColor=51,105,30'
+	'org.eclipse.debug.ui.outColor=0,0,0'
+}
+
