@@ -205,3 +205,10 @@ IEclipsePreferences#org-eclipse-pde-ui {
 		'editor.color.tag=224,226,228'
 		'editor.color.xml_comment=63,127,95'
 }
+
+IEclipsePreferences#org-eclipse-debug-ui {
+  preferences:
+	'org.eclipse.debug.ui.errorColor=183,28,28'
+	'org.eclipse.debug.ui.inColor=51,105,30'
+	'org.eclipse.debug.ui.outColor=0,0,0'
+}
