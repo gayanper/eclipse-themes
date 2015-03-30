@@ -3,6 +3,10 @@ Bundle-ManifestVersion: 2
 Bundle-Name: Eclipse Themes
 Bundle-SymbolicName: org.gap.eclipse.themes;singleton:=true
 Bundle-Version: 1.1.0.qualifier
-Bundle-RequiredExecutionEnvironment: JavaSE-1.8
-Require-Bundle: org.eclipse.e4.ui.css.swt.theme;bundle-version="0.9.300"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Require-Bundle: org.eclipse.core.runtime,
+ org.eclipse.ui,
+ org.eclipse.core.resources;bundle-version="3.9.1"
 Eclipse-BundleShape: dir
+Bundle-Activator: org.gap.eclipse.themes.Activator
+Bundle-ActivationPolicy: lazy

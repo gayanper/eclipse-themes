@@ -1,3 +1,5 @@
+@import url('platform:/config/org.gap.eclipse.themes/custom-light.css');
+
 IEclipsePreferences#org-eclipse-jdt-ui {
     preferences:
         'content_assist_proposals_background=252,252,25'
