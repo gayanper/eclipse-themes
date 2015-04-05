@@ -3,12 +3,8 @@ package org.gap.eclipse.themes;
 import java.io.File;
 import java.io.IOException;
 import java.net.MalformedURLException;
-import java.net.URI;
 import java.net.URISyntaxException;
-import java.net.URL;
 
-import org.eclipse.core.runtime.FileLocator;
-import org.eclipse.core.runtime.URIUtil;
 import org.eclipse.ui.IStartup;
 import org.eclipse.ui.plugin.AbstractUIPlugin;
 import org.osgi.framework.BundleContext;
@@ -30,15 +26,22 @@ public class Activator extends AbstractUIPlugin implements IStartup {
 		instance = this;
 
 		// Creates the custom css files.
-		createIfNotExist("platform:/config/org.gap.eclipse.themes/custom-dark.css");
-		createIfNotExist("platform:/config/org.gap.eclipse.themes/custom-light.css");
+		createIfNotExist(CustomizeFileMapping
+				.customizeFile(ThemeId.MATERIAL_DARK));
+		createIfNotExist(CustomizeFileMapping
+				.customizeFile(ThemeId.MATERIAL_LIGHT));
 	}
 
-	private void createIfNotExist(String uri) throws IOException,
+	private void createIfNotExist(File file) throws IOException,
 			MalformedURLException, URISyntaxException {
-		final URL fileURL = FileLocator.toFileURL(URIUtil.toURL(new URI(uri)));
-		final File file = new File(URIUtil.toURI(fileURL));
 		if (!file.exists()) {
+			if (!file.getParentFile().exists()) {
+				if (!file.getParentFile().mkdirs()) {
+					throw new IOException(
+							"Failed to create the missing dirs for " + file);
+				}
+			}
+
 			file.createNewFile();
 		}
 	}

@@ -3,12 +3,9 @@ package org.gap.eclipse.themes.pm.theme;
 import java.util.List;
 
 import org.eclipse.core.runtime.preferences.InstanceScope;
-import org.eclipse.e4.core.contexts.IEclipseContext;
 import org.eclipse.e4.ui.css.swt.theme.ITheme;
-import org.eclipse.e4.ui.css.swt.theme.IThemeEngine;
-import org.eclipse.e4.ui.model.application.MApplication;
-import org.eclipse.ui.PlatformUI;
 import org.eclipse.ui.preferences.ScopedPreferenceStore;
+import org.gap.eclipse.themes.core.ThemesManager;
 import org.gap.eclipse.themes.pm.Activator;
 import org.gap.eclipse.themes.pm.pref.Preferences;
 
@@ -22,6 +19,8 @@ import com.google.common.collect.Iterables;
  */
 @SuppressWarnings("restriction")
 public class ThemeHandler {
+	private final ThemesManager themesManager = new ThemesManager();
+
 	private final ScopedPreferenceStore pluginStore = new ScopedPreferenceStore(
 			InstanceScope.INSTANCE, Activator.PLUGIN_ID);
 
@@ -29,8 +28,7 @@ public class ThemeHandler {
 	 * Switch to presentation mode.
 	 */
 	public void switchToPresentationMode() {
-		final IThemeEngine themeEngine = getThemeEngine();
-		final String activeThemeId = themeEngine.getActiveTheme().getId();
+		final String activeThemeId = themesManager.getCurrentThemeId();
 		pluginStore.setValue(Preferences.NORMAL_THEME_ID, activeThemeId);
 
 		String themeId = Preferences.ALTERNATE_THEME_ID;
@@ -38,7 +36,7 @@ public class ThemeHandler {
 
 		if (!Strings.isNullOrEmpty(prefValue)) {
 			Optional<ITheme> result = Iterables.tryFind(
-					themeEngine.getThemes(), new Predicate<ITheme>() {
+					themesManager.getAllThemes(), new Predicate<ITheme>() {
 
 						@Override
 						public boolean apply(ITheme theme) {
@@ -51,17 +49,16 @@ public class ThemeHandler {
 			}
 		}
 
-		themeEngine.setTheme(themeId, true);
+		themesManager.setTheme(themeId);
 	}
 
 	/**
 	 * Switch to normal mode.
 	 */
 	public void switchToNormalMode() {
-		final IThemeEngine themeEngine = getThemeEngine();
 		final String normalThemeId = pluginStore
 				.getString(Preferences.NORMAL_THEME_ID);
-		themeEngine.setTheme(normalThemeId, true);
+		themesManager.setTheme(normalThemeId);
 	}
 
 	/**
@@ -70,26 +67,15 @@ public class ThemeHandler {
 	 * @return the current theme id
 	 */
 	public String getCurrentThemeId() {
-		final IThemeEngine themeEngine = getThemeEngine();
-		return themeEngine.getActiveTheme().getId();
+		return themesManager.getCurrentThemeId();
 	}
 
-	
 	/**
 	 * Gets the all themes.
 	 *
 	 * @return the all themes
 	 */
 	public List<ITheme> getAllThemes() {
-		return getThemeEngine().getThemes();
+		return themesManager.getAllThemes();
 	}
-	
-	private IThemeEngine getThemeEngine() {
-		MApplication application = (MApplication) PlatformUI.getWorkbench()
-				.getService(MApplication.class);
-		IEclipseContext context = application.getContext();
-		IThemeEngine engine = context.get(IThemeEngine.class);
-		return engine;
-	}
-
 }

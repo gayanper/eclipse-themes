@@ -36,4 +36,13 @@
          point="org.eclipse.ui.startup">
       <startup></startup>
    </extension>
+   <extension
+         point="org.eclipse.ui.preferencePages">
+      <page
+            category="org.eclipse.ui.preferencePages.Views"
+            class="org.gap.eclipse.themes.pref.CustomizeThemePage"
+            id="org.gap.eclipse.themes.customizeTheme"
+            name="Customize Theme">
+      </page>
+   </extension>
 </plugin>

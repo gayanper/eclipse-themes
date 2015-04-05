@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Themes Core
+Bundle-SymbolicName: org.gap.eclipse.themes.core;singleton:=true
+Bundle-Version: 1.1.1
+Bundle-Vendor: GAP
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ com.google.guava;bundle-version="15.0.0",
+ org.eclipse.e4.core.contexts;bundle-version="1.3.100",
+ org.eclipse.e4.ui.model.workbench,
+ org.eclipse.ui.workbench,
+ org.eclipse.e4.ui.css.swt.theme
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ActivationPolicy: lazy
+Export-Package: org.gap.eclipse.themes.core
