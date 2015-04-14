@@ -150,6 +150,13 @@ CTabItem:selected {
 	color: #ECEFF1;
 }
 
+/* This is to support line highlight mode. TODO: try to improve for Mars release */
+.MPartStack.active .MPart.Editor Form > LayoutComposite StyledText[style~='SWT.MULTI'] {
+	background-color: #293134;
+	color: #e0e2e4;
+}
+
+
 /* JDT */
 #org-eclipse-jdt-debug-ui-DisplayView StyledText {
 	background-color: #293134;
