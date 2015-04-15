@@ -103,6 +103,10 @@ IEclipsePreferences#org-eclipse-ui-editors {
     'additionIndicationInOverviewRuler=true'
     'changeIndicationColor=255,193,7'
     'changeIndicationInOverviewRuler=true'
+	'org.sonar.ide.eclipse.ui.issue.color=255,245,157'
+	'org.sonar.ide.eclipse.ui.newissue.color=98,88,0'
+	'org.sonar.ide.eclipse.ui.newissue.error.text=false'
+	'org.sonar.ide.eclipse.ui.newissue.text.style=NONE'
 }
 
 IEclipsePreferences#org-eclipse-ui-workbench {
