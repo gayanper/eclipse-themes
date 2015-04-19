@@ -8,8 +8,37 @@
     <relativePath>../pom.xml</relativePath>
     <version>1.0.0-SNAPSHOT</version>
   </parent>
-  <groupId>org.gap.eclipse.themes</groupId>
   <artifactId>site</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
   <packaging>eclipse-repository</packaging>
+
+	<profiles>
+		<profile>
+			<id>upload</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.codehaus.mojo</groupId>
+						<artifactId>exec-maven-plugin</artifactId>
+						<version>1.4.0</version>
+						<executions>
+							<execution>
+								<id>upload-content</id>
+								<phase>deploy</phase>
+								<goals>
+									<goal>exec</goal>
+								</goals>
+								<configuration>
+									<executable>${basedir}/upload.sh</executable>
+									<commandlineArgs>${env.bintray_api_key} ${project.build.directory}/${project.artifactId}-${project.version}.zip ${site-version}</commandlineArgs>
+								</configuration>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
+	<properties>
+		<site-version>stable</site-version>
+	</properties>
 </project>
