@@ -39,6 +39,6 @@
 		</profile>
 	</profiles>
 	<properties>
-		<site-version>stable</site-version>
+		<site-version>nightly</site-version>
 	</properties>
 </project>
