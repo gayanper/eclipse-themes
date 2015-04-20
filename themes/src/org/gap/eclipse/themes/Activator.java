@@ -5,7 +5,6 @@ import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URISyntaxException;
 
-import org.eclipse.ui.IStartup;
 import org.eclipse.ui.plugin.AbstractUIPlugin;
 import org.osgi.framework.BundleContext;
 
@@ -14,7 +13,7 @@ import org.osgi.framework.BundleContext;
  *
  * @author gayanper
  */
-public class Activator extends AbstractUIPlugin implements IStartup {
+public class Activator extends AbstractUIPlugin {
 	private static Activator instance;
 
 	public Activator() {
@@ -44,11 +43,6 @@ public class Activator extends AbstractUIPlugin implements IStartup {
 
 			file.createNewFile();
 		}
-	}
-
-	@Override
-	public void earlyStartup() {
-
 	}
 
 	@Override

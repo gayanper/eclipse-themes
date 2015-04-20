@@ -34,7 +34,9 @@
    </extension>
    <extension
          point="org.eclipse.ui.startup">
-      <startup></startup>
+      <startup
+            class="org.gap.eclipse.themes.PluginStartup">
+      </startup>
    </extension>
    <extension
          point="org.eclipse.ui.preferencePages">
