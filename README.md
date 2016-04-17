@@ -1,4 +1,4 @@
-# eclipse-themes
+# eclipse-themes https://travis-ci.org/gayanper/eclipse-themes.svg?branch=master
 Eclipse themes and some plugins to enhance the developer experience.
 
 # License
