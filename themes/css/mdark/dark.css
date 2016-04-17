@@ -161,3 +161,8 @@ CTabItem:selected {
 #org-eclipse-jdt-debug-ui-DisplayView StyledText {
 	background-color: #293134;
 }
+
+/* History View */
+#org-eclipse-team-ui-GenericHistoryView StyledText {
+	color: black;
+}
