@@ -31,6 +31,20 @@
                uri="platform:/plugin/org.gap.eclipse.themes/images/">
          </osgiresourcelocator>
       </stylesheet>
+      <theme
+            basestylesheeturi="css/mdark/dark.css"
+            id="org.gap.eclipse.themes.material-dark-bw"
+            label="Material Dark Black &amp; White">
+      </theme>
+      <stylesheet
+            uri="css/mdark/syntax-bw.css">
+         <themeid
+               refid="org.gap.eclipse.themes.material-dark-bw">
+         </themeid>
+         <osgiresourcelocator
+               uri="platform:/plugin/org.gap.eclipse.themes/images/">
+         </osgiresourcelocator>
+      </stylesheet>
    </extension>
    <extension
          point="org.eclipse.ui.startup">
