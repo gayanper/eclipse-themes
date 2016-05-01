@@ -142,7 +142,23 @@ CTabItem:selected {
     background-color: #f7f7f7;
 }
 
-
+/* Fix side by side tab folder */
+#org-eclipse-ui-editorss {
+	swt-tab-renderer: url('bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.CTabRendering');
+   	swt-selected-tab-fill: #607D8B #607D8B 100% 100%;
+	swt-unselected-tabs-color: #607D8B #607D8B 100% 100%;
+	swt-outer-keyline-color: #607D8B;
+	swt-inner-keyline-color: #607D8B;
+	swt-tab-outline: #607D8B;
+   	background-color: #607D8B;
+	padding: 0px 2px 2px;
+	swt-shadow-visible: false;
+	swt-mru-visible: false;
+	color: #000000;
+	swt-simple: false;
+	swt-corner-radius: 6;
+   	swt-tab-height: 28px;
+}
 
 /* Styles for plugins */
 /* Mylyn */
