@@ -25,6 +25,7 @@ public final class CustomizeFileMapping {
 
 	static {
 		MAPPINGS.put(ThemeId.MATERIAL_DARK, "custom-dark.css");
+		MAPPINGS.put(ThemeId.MATERIAL_DARK_BW, "custom-dark-bw.css");
 		MAPPINGS.put(ThemeId.MATERIAL_LIGHT, "custom-light.css");
 	}
 

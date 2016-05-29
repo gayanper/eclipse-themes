@@ -28,6 +28,8 @@ public class Activator extends AbstractUIPlugin {
 		createIfNotExist(CustomizeFileMapping
 				.customizeFile(ThemeId.MATERIAL_DARK));
 		createIfNotExist(CustomizeFileMapping
+				.customizeFile(ThemeId.MATERIAL_DARK_BW));
+		createIfNotExist(CustomizeFileMapping
 				.customizeFile(ThemeId.MATERIAL_LIGHT));
 	}
 
