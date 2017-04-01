@@ -75,11 +75,15 @@ CTabItem:selected {
 }
 
 /* Styles for views */
-.View Tree,
 .View StyledText,
-.View Composite,
-.View Table {
+.View Composit {
     background-color: #ededed 53.7% #f7f7f7 53.7%;
+}
+
+.View Table,
+.View Tree {
+    background-color: #455A64;
+    color: #f7f7f7;
 }
 
 .MPart Section,
@@ -96,14 +100,13 @@ CTabItem:selected {
 .MPart Form > LayoutComposite Label,
 .MPart Form > LayoutComposite Hyperlink,
 .MPart Form > LayoutComposite ListEditorComposite,
-.MPart Form > LayoutComposite Table,
 .MPart Form > LayoutComposite LayoutComposite,
 .MPart Form > LayoutComposite Composite,
 .MPart Form > LayoutComposite Text,
 .MPart Form > LayoutComposite StyledText,
 .MPart Form > LayoutComposite ToolBar,
 .MPart LayoutComposite > * > LayoutComposite > Section > LayoutComposite > * {
-    background-color: #ededed;
+	background-color: #455A64;
 }
 
 .MPartStack.active .MPart Section,
@@ -125,7 +128,7 @@ CTabItem:selected {
 .MPartStack.active .MPart Form > LayoutComposite ToolBar,
 .MPartStack.active .MPart Form LayoutComposite,
 .MPartStack.active .MPart LayoutComposite > * > LayoutComposite > Section > LayoutComposite > * {
-    background-color: #ededed;
+	background-color: #455A64;
 }
 
 .MPart Form > LayoutComposite Tree,
