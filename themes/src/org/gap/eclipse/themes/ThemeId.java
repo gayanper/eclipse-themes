@@ -7,7 +7,8 @@ package org.gap.eclipse.themes;
  */
 public enum ThemeId {
 	MATERIAL_LIGHT("org.gap.eclipse.themes.material-light"), MATERIAL_DARK(
-			"org.gap.eclipse.themes.material-dark"), MATERIAL_DARK_BW("org.gap.eclipse.themes.material-dark-bw");
+			"org.gap.eclipse.themes.material-dark"), MATERIAL_DARK_BW(
+					"org.gap.eclipse.themes.material-dark-bw"), PAPER_WHITE("org.gap.eclipse.themes.paper-white");
 
 	private String themeId;
 
@@ -32,6 +33,8 @@ public enum ThemeId {
 			return MATERIAL_DARK;
 		case "org.gap.eclipse.themes.material-dark-bw":
 			return MATERIAL_DARK_BW;
+		case "org.gap.eclipse.themes.paper-white":
+			return PAPER_WHITE;
 		default:
 			return null;
 		}

@@ -45,6 +45,11 @@
                uri="platform:/plugin/org.gap.eclipse.themes/images/">
          </osgiresourcelocator>
       </stylesheet>
+      <theme
+            basestylesheeturi="css/paperwhite/paper-white.css"
+            id="org.gap.eclipse.themes.paper-white"
+            label="Paper White">
+      </theme>
    </extension>
    <extension
          point="org.eclipse.ui.startup">
