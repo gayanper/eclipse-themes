@@ -30,16 +30,9 @@
 	background-color: #FFFFFF;
 }
 
-#org-eclipse-ui-editorss {
-	swt-tab-height: 8px;
-	padding: 0px 5px 7px;
-}
-
-
 .MPartStack {
-	swt-tab-renderer: url('bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.CTabRendering');
-    swt-selected-tab-fill: #FFFFFF #FFFFFF 100% 100%;
-	swt-unselected-tabs-color: #FFFFFF #FFFFFF 100% 100%;
+	swt-tab-renderer: url('bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.CTabRendering');    swt-selected-tab-fill: #FFFFFF #FFFFFF 100% 100%;
+	swt-unselected-tabs-color: #FFFFFF;
 	swt-outer-keyline-color: #FFFFFF;
 	swt-inner-keyline-color: #FFFFFF;
 	swt-tab-outline: #FFFFFF;
@@ -54,20 +47,18 @@
 }
 
 .MPartStack.active {
-	swt-selected-tab-fill: #E0E0E0 #E0E0E0 100% 100%;
+	swt-selected-tab-fill: #FFFFFF;
 	swt-tab-outline: #FFFFFF;
     background-color: #FFFFFF;
 	swt-outer-keyline-color: #FFFFFF;
 	swt-inner-keyline-color: #FFFFFF;
 }
 
-
-
 /* Fix side by side tab folder */
 #org-eclipse-ui-editorss {
 	swt-tab-renderer: url('bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.CTabRendering');
-    swt-selected-tab-fill: #E0E0E0 #E0E0E0 100% 100%;
-	swt-unselected-tabs-color: #FFFFFF #FFFFFF 100% 100%;
+    swt-selected-tab-fill: #FFFFFF;
+	swt-unselected-tabs-color: #FFFFFF;
 	swt-outer-keyline-color: #FFFFFF;
 	swt-inner-keyline-color: #FFFFFF;
 	swt-tab-outline: #FFFFFF;
@@ -82,7 +73,7 @@
 }
 
 CTabItem:selected {
-	color: #212121;
+	color: #000000;
 }
 
 CTabFolder Canvas {
