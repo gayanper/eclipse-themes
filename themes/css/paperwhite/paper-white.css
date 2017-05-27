@@ -30,8 +30,12 @@
 	background-color: #FFFFFF;
 }
 
+/*
+swt-tab-renderer: url('bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.CTabRendering');    swt-selected-tab-fill: #FFFFFF #FFFFFF 100% 100%;
+*/
 .MPartStack {
-	swt-tab-renderer: url('bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.CTabRendering');    swt-selected-tab-fill: #FFFFFF #FFFFFF 100% 100%;
+	swt-tab-renderer: url('bundleclass://org.gap.eclipse.themes/org.gap.eclipse.themes.Renderer');
+	swt-selected-tab-fill: #FFFFFF #FFFFFF 100% 100%;
 	swt-unselected-tabs-color: #FFFFFF;
 	swt-outer-keyline-color: #FFFFFF;
 	swt-inner-keyline-color: #FFFFFF;
@@ -41,7 +45,7 @@
 	swt-shadow-visible: false;
 	swt-mru-visible: false;
 	color: #000000;
-	swt-simple: false;
+	swt-simple: true;
 	swt-corner-radius: 6;
     swt-tab-height: 28px;
 }
@@ -56,7 +60,7 @@
 
 /* Fix side by side tab folder */
 #org-eclipse-ui-editorss {
-	swt-tab-renderer: url('bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.CTabRendering');
+	/*swt-tab-renderer: url('bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.CTabRendering');*/
     swt-selected-tab-fill: #FFFFFF;
 	swt-unselected-tabs-color: #FFFFFF;
 	swt-outer-keyline-color: #FFFFFF;
