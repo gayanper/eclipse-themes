@@ -26,7 +26,7 @@ import com.google.common.collect.Sets;
  *
  * @author gayanper
  */
-public class ToggleHandler extends AbstractHandler {
+public class TogglePMHandler extends AbstractHandler {
 
 	private final ScopedPreferenceStore workbenchStore = new ScopedPreferenceStore(InstanceScope.INSTANCE,
 			"org.eclipse.ui.workbench");

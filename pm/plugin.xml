@@ -9,9 +9,9 @@
       </category>
       <command
             categoryId="presentation-mode-ui.category"
-            defaultHandler="org.gap.eclipse.themes.pm.commands.ToggleHandler"
+            defaultHandler="org.gap.eclipse.themes.pm.commands.TogglePMHandler"
             id="presentation-mode-ui.toggle-mode"
-            name="Toggle">
+            name="Toggle Mode">
          <state
                class="org.eclipse.ui.handlers.RegistryToggleState"
                id="org.eclipse.ui.commands.toggleState">
@@ -20,6 +20,27 @@
                <parameter
                      name="persisted"
                      value="true">
+               </parameter>
+               <parameter
+                     name="default"
+                     value="false">
+               </parameter>
+            </class>
+         </state>
+      </command>
+      <command
+            categoryId="presentation-mode-ui.category"
+            defaultHandler="org.gap.eclipse.themes.pm.commands.ToggleMenuHandler"
+            id="presentation-mode-ui.toggle-menu"
+            name="Toggle Menu">
+         <state
+               class="org.eclipse.ui.handlers.RegistryToggleState"
+               id="org.eclipse.ui.commands.toggleState">
+            <class
+                  class="org.eclipse.ui.handlers.RegistryToggleState">
+               <parameter
+                     name="persisted"
+                     value="false">
                </parameter>
                <parameter
                      name="default"
@@ -41,6 +62,12 @@
                   commandId="presentation-mode-ui.toggle-mode"
                   icon="icons/pm-toggle.png"
                   id="presentation-mode-ui.toggle-mode"
+                  style="toggle">
+            </command>
+            <command
+                  commandId="presentation-mode-ui.toggle-menu"
+                  icon="icons/menu-toggle.png"
+                  id="presentation-mode-ui.toggle-menu"
                   style="toggle">
             </command>
          </toolbar>
