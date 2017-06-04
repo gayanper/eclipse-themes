@@ -1,6 +1,7 @@
 package org.gap.eclipse.themes.pm;
 
 import org.eclipse.ui.plugin.AbstractUIPlugin;
+import org.gap.eclipse.themes.pm.commands.MenuBarManager;
 import org.osgi.framework.BundleContext;
 
 /**
@@ -14,6 +15,10 @@ public class Activator extends AbstractUIPlugin {
 	// The shared instance
 	private static Activator plugin;
 	
+	private MenuBarManager menuBarManager = new MenuBarManager();
+
+	private WorkbenchWindowManager windowManager = new WorkbenchWindowManager();
+
 	/**
 	 * The constructor
 	 */
@@ -34,6 +39,7 @@ public class Activator extends AbstractUIPlugin {
 	 * @see org.eclipse.ui.plugin.AbstractUIPlugin#stop(org.osgi.framework.BundleContext)
 	 */
 	public void stop(BundleContext context) throws Exception {
+		windowManager.dispose();
 		plugin = null;
 		super.stop(context);
 	}
@@ -47,4 +53,7 @@ public class Activator extends AbstractUIPlugin {
 		return plugin;
 	}
 
+	public MenuBarManager getMenuBarManager() {
+		return menuBarManager;
+	}
 }

@@ -40,7 +40,7 @@
                   class="org.eclipse.ui.handlers.RegistryToggleState">
                <parameter
                      name="persisted"
-                     value="false">
+                     value="true">
                </parameter>
                <parameter
                      name="default"
@@ -87,6 +87,12 @@
       <initializer
             class="org.gap.eclipse.themes.pm.pref.DefaultPreferenceInitializer">
       </initializer>
+   </extension>
+   <extension
+         point="org.eclipse.ui.startup">
+      <startup
+            class="org.gap.eclipse.themes.pm.PluginStartup">
+      </startup>
    </extension>
 
 </plugin>
