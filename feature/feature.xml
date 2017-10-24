@@ -16,6 +16,24 @@
       [Enter License Description here.]
    </license>
 
+   <includes
+         id="com.codeaffine.eclipse.swt.feature"
+         version="0.0.0"
+         os="win32"/>
+   <includes
+         id="com.codeaffine.eclipse.swt.win"
+         version="0.0.0"
+         os="win32"/>
+   <includes
+         id="com.codeaffine.eclipse.ui.swt.theme.feature"
+         version="0.0.0"
+         os="win32"/>
+   <includes
+         id="com.codeaffine.eclipse.ui.swt.theme.win"
+         version="0.0.0"
+         os="win32"/>
+         
+
    <plugin
          id="org.gap.eclipse.themes.pm"
          download-size="0"
