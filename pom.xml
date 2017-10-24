@@ -38,5 +38,10 @@
 	      <layout>p2</layout>
 	      <url>http://download.eclipse.org/releases/oxygen</url>
 	   </repository>
+	  <repository>
+	      <id>xiliary</id>
+	      <layout>p2</layout>
+	      <url>http://fappel.github.io/xiliary/</url>
+	   </repository>
   </repositories>
 </project>
