@@ -41,7 +41,7 @@
 	  <repository>
 	      <id>xiliary</id>
 	      <layout>p2</layout>
-	      <url>http://fappel.github.io/xiliary/0.6</url>
+	      <url>http://fappel.github.io/xiliary/0.5</url>
 	   </repository>
   </repositories>
 </project>

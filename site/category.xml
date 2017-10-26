@@ -4,5 +4,5 @@
       <category name="org.gap.eclipse.themes"/>
    </feature>
    <category-def name="org.gap.eclipse.themes" label="Eclipse Appearence"/>
-   <repository-reference location="http://https://fappel.github.io/xiliary" enabled="true" />
+   <repository-reference location="http://fappel.github.io/xiliary/0.5" enabled="true" />
 </site>
