@@ -50,6 +50,17 @@
             id="org.gap.eclipse.themes.paper-white"
             label="Paper White">
       </theme>
+      <theme
+            basestylesheeturi="css/paperdark/paper-dark.css"
+            id="org.gap.eclipse.themes.paper-dark"
+            label="Paper Dark">
+      </theme>
+      <stylesheet
+            uri="css/paperdark/syntax.css">
+         <themeid
+               refid="org.gap.eclipse.themes.paper-dark">
+         </themeid>
+      </stylesheet>
    </extension>
    <extension
          point="org.eclipse.ui.startup">

@@ -1,0 +1,165 @@
+@import url("platform:/plugin/org.eclipse.ui.themes/css/dark/e4-dark_globalstyle.css");
+
+
+.MTrimmedWindow {
+	background-color: #444444;
+}
+
+.MPartStack {
+	swt-simple: false;
+	swt-mru-visible: false;
+}
+
+.MTrimBar {
+	background-color: #444444;
+}
+
+.MToolBar,
+.MToolControl,
+.MPartStack > * > ToolBar,
+.MToolControl > * > ToolBar {
+	background-color: #444444;
+}
+
+.MTrimBar#org-eclipse-ui-main-toolbar  {
+	background-color: #444444;
+}
+
+.MToolControl.TrimStack {
+    frame-image:  url('./vsFrame.png');
+    handle-image:  url('./dragHandle.png');
+    frame-cuts: 0px 0px 6px 16px;
+}
+
+#PerspectiveSwitcher {
+	background-color: #444444;
+	eclipse-perspective-keyline-color: #E0E0E0;
+}
+
+.MPartSashContainer {
+	background-color: #444444;
+}
+
+/*
+swt-tab-renderer: url('bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.CTabRendering');    swt-selected-tab-fill: #444444 #444444 100% 100%;
+*/
+.MPartStack,
+CTabFolder {
+	swt-tab-renderer: url('bundleclass://org.gap.eclipse.themes/org.gap.eclipse.themes.Renderer');
+	swt-selected-tab-fill: #444444 #444444 100% 100%;
+	swt-unselected-tabs-color: #444444;
+	swt-outer-keyline-color: #444444;
+	swt-inner-keyline-color: #444444;
+	swt-tab-outline: #444444;
+    background-color: #444444;
+	padding: 0px;
+	swt-shadow-visible: false;
+	swt-mru-visible: false;
+	color: #FFFFFF;
+	swt-simple: true;
+	swt-corner-radius: 6;
+    swt-tab-height: 28px;
+    swt-unselected-hot-tab-color-background: #4D4D4D;
+}
+
+CTabFolder[style~='SWT.DOWN'][style~='SWT.BOTTOM'] {
+    swt-tab-renderer: url('bundleclass://org.gap.eclipse.themes/org.gap.eclipse.themes.Renderer');
+    swt-unselected-hot-tab-color-background: #4D4D4D;
+}
+
+
+.MPartStack.active {
+	swt-selected-tab-fill: #444444;
+	swt-tab-outline: #444444;
+    background-color: #444444;
+	swt-outer-keyline-color: #444444;
+	swt-inner-keyline-color: #444444;
+	color: #FFFFFF;
+}
+
+/* Fix side by side tab folder */
+#org-eclipse-ui-editorss {
+	/*swt-tab-renderer: url('bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.CTabRendering');*/
+    swt-selected-tab-fill: #444444;
+	swt-unselected-tabs-color: #444444;
+	swt-outer-keyline-color: #444444;
+	swt-inner-keyline-color: #444444;
+	swt-tab-outline: #444444;
+   	background-color: #444444;
+	padding: 0px;
+	swt-shadow-visible: false;
+	swt-mru-visible: false;
+	color: #FFFFFF;
+	swt-simple: false;
+	swt-corner-radius: 6;
+   	swt-tab-height: 28px;
+}
+
+CTabItem:selected {
+	color: #00FFFF;
+}
+
+CTabFolder Canvas {
+	background-color: #444444;
+}
+
+Form, FormHeading {
+	background-color: #444444;
+	background: #444444;
+	background-image: #444444;
+	color: #505050;
+}
+
+Form {
+	/* Bug 465148: Additional styling for the Form */
+	text-background-color: #444444;
+
+	tb-toggle-hover-color: #505050;
+	tb-toggle-color: #505050;
+	h-hover-full-color: #505050;
+	h-hover-light-color: #505050;
+	h-bottom-keyline-2-color: #eaeaea;
+	h-bottom-keyline-1-color: #eaeaea;
+
+}
+
+
+
+Section {
+	background-color: #444444;
+  	color: #505050;
+  	background-color-titlebar: #eaeaea;
+  	background-color-gradient-titlebar: #eaeaea;
+  	border-color-titlebar: #444444;
+}
+
+#org-eclipse-egit-ui-StagingView StyledText,
+Form Section LayoutComposite StyledText
+ {
+    background-color: #313538;
+    color: #dddddd;
+ }
+
+PushResultTable-SpellcheckableMessageAreaExtension StyledText {
+	background-color: #313538;
+	color: #dddddd;
+}
+
+BulletListBlock > StyledText {
+    background-color: #3f4447;
+    color: #BBBBBB;
+}
+
+#IDEWindow Tree,
+#IDEWindow Table,
+#IDEWindow StyledText {
+	flat-scroll-bar: true;
+	flat-scroll-bar-background : #444444;
+	flat-scroll-bar-thumb: #444444;
+	flat-scroll-bar-page-increment: #444444;
+	flat-scroll-bar-thumb-top-level: #00FFFF;
+	flat-scroll-bar-page-increment-top-level: #444444;
+	flat-scroll-bar-increment-length: 7;
+	adapter-demeanor: fixed-width;
+}
+
