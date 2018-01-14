@@ -2,7 +2,7 @@
 
 
 .MTrimmedWindow {
-	background-color: #444444;
+	background-color: #292929;
 }
 
 .MPartStack {
@@ -11,18 +11,18 @@
 }
 
 .MTrimBar {
-	background-color: #444444;
+	background-color: #292929;
 }
 
 .MToolBar,
 .MToolControl,
 .MPartStack > * > ToolBar,
 .MToolControl > * > ToolBar {
-	background-color: #444444;
+	background-color: #292929;
 }
 
 .MTrimBar#org-eclipse-ui-main-toolbar  {
-	background-color: #444444;
+	background-color: #292929;
 }
 
 .MToolControl.TrimStack {
@@ -32,64 +32,65 @@
 }
 
 #PerspectiveSwitcher {
-	background-color: #444444;
+	background-color: #292929;
 	eclipse-perspective-keyline-color: #E0E0E0;
 }
 
 .MPartSashContainer {
-	background-color: #444444;
+	background-color: #292929;
 }
 
 /*
-swt-tab-renderer: url('bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.CTabRendering');    swt-selected-tab-fill: #444444 #444444 100% 100%;
+swt-tab-renderer: url('bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.CTabRendering');    swt-selected-tab-fill: #292929 #292929 100% 100%;
 */
 .MPartStack,
 CTabFolder {
 	swt-tab-renderer: url('bundleclass://org.gap.eclipse.themes/org.gap.eclipse.themes.Renderer');
-	swt-selected-tab-fill: #444444 #444444 100% 100%;
-	swt-unselected-tabs-color: #444444;
-	swt-outer-keyline-color: #444444;
-	swt-inner-keyline-color: #444444;
-	swt-tab-outline: #444444;
-    background-color: #444444;
+	swt-selected-tab-fill: #292929 #292929 100% 100%;
+	swt-unselected-tabs-color: #292929;
+	swt-outer-keyline-color: #292929;
+	swt-inner-keyline-color: #292929;
+	swt-tab-outline: #292929;
+    background-color: #292929;
 	padding: 0px;
 	swt-shadow-visible: false;
 	swt-mru-visible: false;
-	color: #FFFFFF;
+	color: #CCCCCC;
 	swt-simple: true;
 	swt-corner-radius: 6;
     swt-tab-height: 28px;
     swt-unselected-hot-tab-color-background: #4D4D4D;
 }
 
-CTabFolder[style~='SWT.DOWN'][style~='SWT.BOTTOM'] {
-    swt-tab-renderer: url('bundleclass://org.gap.eclipse.themes/org.gap.eclipse.themes.Renderer');
+CTabFolder[style~='SWT.DOWN'][style~='SWT.BOTTOM'],
+CTabFolder {
+    swt-tab-renderer: url('bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.CTabRendering');
     swt-unselected-hot-tab-color-background: #4D4D4D;
 }
 
 
 .MPartStack.active {
-	swt-selected-tab-fill: #444444;
-	swt-tab-outline: #444444;
-    background-color: #444444;
-	swt-outer-keyline-color: #444444;
-	swt-inner-keyline-color: #444444;
-	color: #FFFFFF;
+	swt-selected-tab-fill: #292929;
+	swt-tab-outline: #292929;
+    background-color: #292929;
+	swt-outer-keyline-color: #292929;
+	swt-inner-keyline-color: #292929;
+	color: #CCCCCC;
 }
 
 /* Fix side by side tab folder */
 #org-eclipse-ui-editorss {
 	/*swt-tab-renderer: url('bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.CTabRendering');*/
-    swt-selected-tab-fill: #444444;
-	swt-unselected-tabs-color: #444444;
-	swt-outer-keyline-color: #444444;
-	swt-inner-keyline-color: #444444;
-	swt-tab-outline: #444444;
-   	background-color: #444444;
+    swt-selected-tab-fill: #292929;
+	swt-unselected-tabs-color: #292929;
+	swt-outer-keyline-color: #292929;
+	swt-inner-keyline-color: #292929;
+	swt-tab-outline: #292929;
+   	background-color: #292929;
 	padding: 0px;
 	swt-shadow-visible: false;
 	swt-mru-visible: false;
-	color: #FFFFFF;
+	color: #CCCCCC;
 	swt-simple: false;
 	swt-corner-radius: 6;
    	swt-tab-height: 28px;
@@ -100,19 +101,21 @@ CTabItem:selected {
 }
 
 CTabFolder Canvas {
-	background-color: #444444;
+	background-color: #292929;
 }
 
-Form, FormHeading {
-	background-color: #444444;
-	background: #444444;
-	background-image: #444444;
+Form, 
+FormHeading,
+FormHeading Composite {
+	background-color: #515658;
+	background: #515658;
+	background-image: #515658;
 	color: #505050;
 }
 
 Form {
 	/* Bug 465148: Additional styling for the Form */
-	text-background-color: #444444;
+	text-background-color: #292929;
 
 	tb-toggle-hover-color: #505050;
 	tb-toggle-color: #505050;
@@ -120,19 +123,59 @@ Form {
 	h-hover-light-color: #505050;
 	h-bottom-keyline-2-color: #eaeaea;
 	h-bottom-keyline-1-color: #eaeaea;
-
 }
 
-
+Form Composite,
+Form ListEditorComposite {
+	background-color: #292929;
+}
 
 Section {
-	background-color: #444444;
+	background-color: #292929;
   	color: #505050;
-  	background-color-titlebar: #eaeaea;
-  	background-color-gradient-titlebar: #eaeaea;
-  	border-color-titlebar: #444444;
+  	background-color-titlebar: #515658;
+  	background-color-gradient-titlebar: #515658;
+  	border-color-titlebar: #292929;
 }
 
+Section Composite,
+Section Label,
+Section Hyperlink,
+DependenciesComposite,
+DependenciesComposite-DependenciesListComposite {
+	background-color: #292929;
+}
+
+Section > Label {
+	background-color: #515658;
+}
+
+.MPartStack Tree,
+.MPartStack Table,
+.MPartStack List {
+	background-color: #292929;
+}
+
+
+#org-eclipse-ui-StatusLine,
+#org-eclipse-ui-ProgressBar,
+#org-eclipse-ui-ProgressBar Canvas,
+#org-eclipse-ui-ProgressBar Composite {
+    color: #CCCCCC;
+	background-color: #292929;
+}
+
+#org-eclipse-ui-StatusLine CLabel {
+    color: #CCCCCC;
+	background-color: #292929;
+}
+
+StatusLine, ImageBasedFrame {
+    color: #BDBAB7;
+	background-color: #292929;
+}
+
+/* from syntax files */
 #org-eclipse-egit-ui-StagingView StyledText,
 Form Section LayoutComposite StyledText
  {
@@ -154,11 +197,11 @@ BulletListBlock > StyledText {
 #IDEWindow Table,
 #IDEWindow StyledText {
 	flat-scroll-bar: true;
-	flat-scroll-bar-background : #444444;
-	flat-scroll-bar-thumb: #444444;
-	flat-scroll-bar-page-increment: #444444;
+	flat-scroll-bar-background : #292929;
+	flat-scroll-bar-thumb: #292929;
+	flat-scroll-bar-page-increment: #292929;
 	flat-scroll-bar-thumb-top-level: #00FFFF;
-	flat-scroll-bar-page-increment-top-level: #444444;
+	flat-scroll-bar-page-increment-top-level: #292929;
 	flat-scroll-bar-increment-length: 7;
 	adapter-demeanor: fixed-width;
 }
