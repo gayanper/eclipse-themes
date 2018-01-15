@@ -1,3 +1,5 @@
+@import url('platform:/config/org.gap.eclipse.themes/custom-paper-dark.css');
+
 IEclipsePreferences#org-eclipse-ui-editors:org-eclipse-ui-themes { /* pseudo attribute added to allow contributions without replacing this node, see Bug 466075 */
 	preferences:
 		'AbstractTextEditor.Color.Background.SystemDefault=false'

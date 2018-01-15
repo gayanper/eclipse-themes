@@ -31,6 +31,8 @@ public class Activator extends AbstractUIPlugin {
 				.customizeFile(ThemeId.MATERIAL_DARK_BW));
 		createIfNotExist(CustomizeFileMapping
 				.customizeFile(ThemeId.MATERIAL_LIGHT));
+		createIfNotExist(CustomizeFileMapping.customizeFile(ThemeId.PAPER_DARK));
+		createIfNotExist(CustomizeFileMapping.customizeFile(ThemeId.PAPER_WHITE));
 	}
 
 	private void createIfNotExist(File file) throws IOException,

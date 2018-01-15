@@ -50,6 +50,12 @@
             id="org.gap.eclipse.themes.paper-white"
             label="Paper White">
       </theme>
+      <stylesheet
+            uri="css/paperwhite/syntax.css">
+         <themeid
+               refid="org.gap.eclipse.themes.paper-white">
+         </themeid>
+      </stylesheet>
       <theme
             basestylesheeturi="css/paperdark/paper-dark.css"
             id="org.gap.eclipse.themes.paper-dark"
