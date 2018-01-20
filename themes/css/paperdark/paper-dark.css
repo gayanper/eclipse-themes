@@ -233,16 +233,20 @@ BulletListBlock > StyledText {
     color: #BBBBBB;
 }
 
-#IDEWindow Tree,
-#IDEWindow Table,
-#IDEWindow StyledText {
-	flat-scroll-bar: true;
-	flat-scroll-bar-background : #292929;
-	flat-scroll-bar-thumb: #292929;
-	flat-scroll-bar-page-increment: #292929;
-	flat-scroll-bar-thumb-top-level: #00FFFF;
-	flat-scroll-bar-page-increment-top-level: #292929;
-	flat-scroll-bar-increment-length: 7;
-	adapter-demeanor: fixed-width;
+Tree {
+	swt-tree-arrows-color:#cccccc;
+	swt-tree-arrows-mode: triangle;  /* triangle or square */
+	swt-selection-foreground-color: #fcfcf9;
+	swt-selection-background-color: #494949;
+	swt-hot-background-color: #2F2F2F;
+	swt-selection-border-color: #7F7D68;
+	swt-hot-border-color: #545454;
 }
 
+Table {
+	swt-selection-foreground-color: #fcfcf9;
+	swt-selection-background-color: #494949;
+	swt-hot-background-color: #2F2F2F;
+	swt-selection-border-color: #7F7D68;
+	swt-hot-border-color: #545454;
+}

@@ -1,0 +1,25 @@
+@import url("platform:/plugin/org.gap.eclipse.themes/css/paperdark/paper-dark.css");
+
+Tree,
+Table {
+	flat-scroll-bar: true;
+	flat-scroll-bar-background : #292929;
+	flat-scroll-bar-thumb: #7F7D68;
+	flat-scroll-bar-page-increment: #292929;
+	flat-scroll-bar-thumb-top-level: #7F7D68;
+	flat-scroll-bar-page-increment-top-level: #292929;
+	flat-scroll-bar-increment-length: 7;
+}
+
+#IDEWindow Tree,
+#IDEWindow Table,
+#IDEWindow StyledText {
+	flat-scroll-bar: true;
+	flat-scroll-bar-background : #292929;
+	flat-scroll-bar-thumb: #292929;
+	flat-scroll-bar-page-increment: #292929;
+	flat-scroll-bar-thumb-top-level: #00FFFF;
+	flat-scroll-bar-page-increment-top-level: #292929;
+	flat-scroll-bar-increment-length: 7;
+}
+
