@@ -61,11 +61,6 @@
             id="org.gap.eclipse.themes.paper-dark"
             label="Paper Dark">
       </theme>
-      <theme
-            basestylesheeturi="css/paperdark/paper-dark-win.css"
-            id="org.gap.eclipse.themes.paper-dark"
-            label="Paper Dark" os="win32">
-      </theme>
       <stylesheet
             uri="css/paperdark/syntax.css">
          <themeid
