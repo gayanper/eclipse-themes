@@ -233,6 +233,11 @@ BulletListBlock > StyledText {
     color: #BBBBBB;
 }
 
+Link {
+	swt-link-foreground-color: #9ac9d8;
+	color: #9ac9d8;
+}
+
 Tree {
 	swt-tree-arrows-color:#cccccc;
 	swt-tree-arrows-mode: triangle;  /* triangle or square */
