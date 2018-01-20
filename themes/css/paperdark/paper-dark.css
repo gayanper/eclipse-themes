@@ -238,7 +238,7 @@ Link {
 	color: #9ac9d8;
 }
 
-Tree {
+Shell[style~='SWT.MENU'][style~='SWT.TITLE'] Tree {
 	swt-tree-arrows-color:#cccccc;
 	swt-tree-arrows-mode: triangle;  /* triangle or square */
 	swt-selection-foreground-color: #fcfcf9;
@@ -248,7 +248,7 @@ Tree {
 	swt-hot-border-color: #545454;
 }
 
-Table {
+Shell[style~='SWT.MENU'][style~='SWT.TITLE'] Table {
 	swt-selection-foreground-color: #fcfcf9;
 	swt-selection-background-color: #494949;
 	swt-hot-background-color: #2F2F2F;
