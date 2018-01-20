@@ -407,3 +407,30 @@ IEclipsePreferences#org-eclipse-jdt-ui:org-eclipse-jdt-ui { /* pseudo attribute 
 		'semanticHighlighting.typeParameter.bold=false'
 		'sourceHoverBackgroundColor=68,68,68'
 }
+
+IEclipsePreferences#com-reprezen-swagedit {
+    preferences:
+        'colorAliasPreferences=154,140,124'
+        'colorAnchorPreferences=154,140,124'
+        'colorCommentPreference=140,140,140'
+        'colorConstantPreferences=23,198,163'
+        'colorDefaultPreference=217,232,247'
+        'colorDocumentPreference=217,232,247'
+        'colorKeyPreference=221,40,103'
+        'colorScalarPreference=217,232,247'
+        'colorTagPropertyPreferences=38,139,210'
+}
+
+IEclipsePreferences#com-reprezen-swagedit-openapi3 {
+    preferences:
+        'colorAliasPreferences=154,140,124'
+        'colorAnchorPreferences=154,140,124'
+        'colorCommentPreference=140,140,140'
+        'colorConstantPreferences=23,198,163'
+        'colorDefaultPreference=217,232,247'
+        'colorDocumentPreference=217,232,247'
+        'colorKeyPreference=221,40,103'
+        'colorScalarPreference=217,232,247'
+        'colorTagPropertyPreferences=38,139,210'
+}
+
