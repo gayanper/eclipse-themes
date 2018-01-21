@@ -206,6 +206,7 @@ Section > Label {
 
 
 #org-eclipse-ui-StatusLine,
+#org-eclipse-ui-StatusLine Label,
 #org-eclipse-ui-ProgressBar,
 #org-eclipse-ui-ProgressBar Canvas,
 #org-eclipse-ui-ProgressBar Composite {
