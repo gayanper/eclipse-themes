@@ -470,6 +470,11 @@ IEclipsePreferences#org-eclipse-wst-json-ui {
 	'VALUE_STRING=#FFC600 | null | true | true | false | false'
 }
 
+IEclipsePreferences#org-eclipse-ui-editors:org-eclipse-ui-genericeditor {
+  preferences:
+        'TextOccurrenceIndicationColor=27,98,145'
+}
+
 IEclipsePreferences#com-reprezen-swagedit {
     preferences:
         'colorAliasPreferences=154,140,124'
