@@ -448,6 +448,16 @@ IEclipsePreferences#org-eclipse-wst-html-ui {
 		'xmlContent=#D9E8F7 | null | null | null | null | null'
 }
 
+IEclipsePreferences#org-eclipse-jst-jsp-ui {
+	preferences:
+		'SCRIPT_AREA_BORDER=#fbd153 | null | false | false | false | false'
+		'tagAttributeEquals=#52ca11 | null | false | false | false | false'
+		'tagAttributeName=#a7ec21 | null | false | false | false | false'
+		'tagAttributeValue=#17c6a3 | null | false | false | false | false'
+		'tagName=#03a8d8 | null | true | false | false | false'
+		'tagBorder=#0080ff | null | false | false | false | false'
+}
+
 IEclipsePreferences#com-reprezen-swagedit {
     preferences:
         'colorAliasPreferences=154,140,124'
