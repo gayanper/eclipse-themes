@@ -458,6 +458,18 @@ IEclipsePreferences#org-eclipse-jst-jsp-ui {
 		'tagBorder=#0080ff | null | false | false | false | false'
 }
 
+IEclipsePreferences#org-eclipse-wst-json-ui {
+	preferences:
+	'COLON=#FFFFFF | null | false | false | false | false'
+	'COMMA=#FFFFFF | null | false | false | false | false'
+	'CURLY_BRACE=#FFFFFF | null | false | false | false | false'
+	'OBJECT_KEY=#BED6FF | null | false | false | false | false'
+	'VALUE_BOOLEAN=#03A8D8 | null | false | false | false | false'
+	'VALUE_NULL=#969696 | null | false | false | false | false'	
+	'VALUE_NUMBER=#D25242 | null | false | false | false | false'
+	'VALUE_STRING=#FFC600 | null | true | true | false | false'
+}
+
 IEclipsePreferences#com-reprezen-swagedit {
     preferences:
         'colorAliasPreferences=154,140,124'
