@@ -104,8 +104,6 @@ Form {
 
 }
 
-
-
 Section {
 	background-color: #ffffff;
   	color: #505050;
@@ -114,15 +112,3 @@ Section {
   	border-color-titlebar: #ffffff;
 }
 
-#IDEWindow Tree,
-#IDEWindow Table,
-#IDEWindow StyledText {
-	flat-scroll-bar: true;
-	flat-scroll-bar-background : #ffffff;
-	flat-scroll-bar-thumb: #cdcdcd;
-	flat-scroll-bar-page-increment: #f8f8f8;
-	flat-scroll-bar-thumb-top-level: #fedac7;
-	flat-scroll-bar-page-increment-top-level: #f8f8f8;
-	flat-scroll-bar-increment-length: 7;
-	adapter-demeanor: expand-on-mouse-over; /* fixed-width */
-}
