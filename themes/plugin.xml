@@ -5,13 +5,13 @@
          point="org.eclipse.e4.ui.css.swt.theme">
       <theme
             basestylesheeturi="css/mdark/dark.css"
-            id="org.gap.eclipse.themes.material-dark"
+            id="org.gap.eclipse.themes.material-d"
             label="Material Dark">
       </theme>
       <stylesheet
             uri="css/mdark/syntax.css">
          <themeid
-               refid="org.gap.eclipse.themes.material-dark">
+               refid="org.gap.eclipse.themes.material-d">
          </themeid>
          <osgiresourcelocator
                uri="platform:/plugin/org.gap.eclipse.themes/images/">
@@ -19,13 +19,13 @@
       </stylesheet>
       <theme
             basestylesheeturi="css/mlight/light.css"
-            id="org.gap.eclipse.themes.material-light"
+            id="org.gap.eclipse.themes.material-l"
             label="Material Light">
       </theme>
       <stylesheet
             uri="css/mlight/syntax.css">
          <themeid
-               refid="org.gap.eclipse.themes.material-light">
+               refid="org.gap.eclipse.themes.material-l">
          </themeid>
          <osgiresourcelocator
                uri="platform:/plugin/org.gap.eclipse.themes/images/">
@@ -33,13 +33,13 @@
       </stylesheet>
       <theme
             basestylesheeturi="css/mdark/dark.css"
-            id="org.gap.eclipse.themes.material-dark-bw"
+            id="org.gap.eclipse.themes.material-d-bw"
             label="Material Dark Black &amp; White">
       </theme>
       <stylesheet
             uri="css/mdark/syntax-bw.css">
          <themeid
-               refid="org.gap.eclipse.themes.material-dark-bw">
+               refid="org.gap.eclipse.themes.material-d-bw">
          </themeid>
          <osgiresourcelocator
                uri="platform:/plugin/org.gap.eclipse.themes/images/">
