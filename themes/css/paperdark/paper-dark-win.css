@@ -1,0 +1,19 @@
+@import url("platform:/plugin/org.gap.eclipse.themes/css/paperdark/paper-dark.css");
+
+Shell[style~='SWT.MENU'][style~='SWT.TITLE'] Tree {
+	swt-tree-arrows-color:#cccccc;
+	swt-tree-arrows-mode: triangle;  /* triangle or square */
+	swt-hot-background-color: #2F2F2F;
+	swt-hot-border-color: #545454;
+	swt-selection-border-color: #7F7D68;
+	swt-selection-foreground-color: #fcfcf9;
+	swt-selection-background-color: #494949;
+}
+
+Shell[style~='SWT.MENU'][style~='SWT.TITLE'] Table {
+	swt-selection-foreground-color: #fcfcf9;
+	swt-selection-background-color: #494949;
+	swt-hot-background-color: #2F2F2F;
+	swt-selection-border-color: #7F7D68;
+	swt-hot-border-color: #545454;
+}

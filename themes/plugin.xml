@@ -58,13 +58,20 @@
       </stylesheet>
       <theme
             basestylesheeturi="css/paperdark/paper-dark.css"
-            id="org.gap.eclipse.themes.paper-dark"
-            label="Paper Dark">
+            id="org.gap.eclipse.themes.paper-d"
+            label="Paper Dark (Linux)"
+            os="linux">
+      </theme>
+      <theme
+            basestylesheeturi="css/paperdark/paper-dark-win.css"
+            id="org.gap.eclipse.themes.paper-d"
+            label="Paper Dark (Windows)"
+            os="win32">
       </theme>
       <stylesheet
             uri="css/paperdark/syntax.css">
          <themeid
-               refid="org.gap.eclipse.themes.paper-dark">
+               refid="org.gap.eclipse.themes.paper-d">
          </themeid>
       </stylesheet>
    </extension>
