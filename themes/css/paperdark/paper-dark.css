@@ -258,8 +258,14 @@ Link {
 	swt-scrollbar-mouse-near-scroll-width: 15px;
 }
 
-/* Fixed for workspace dialog */
+/* Fix for workspace dialog */
 ExpandableComposite Composite,
 ExpandableComposite Button[style~='SWT.CHECK']{
 	background-color: #515658;
+}
+
+/* Fix rename popup */
+Shell[style~='SWT.DROP_DOWN'][style~='SWT.POP_UP'][style~='SWT.ARROW'] > StyledText {
+  background-color: #515658;
+  color: #CCCCCC;
 }
