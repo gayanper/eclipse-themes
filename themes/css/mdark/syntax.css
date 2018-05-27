@@ -120,6 +120,10 @@ IEclipsePreferences#org-eclipse-ui-workbench {
       'OUTGOING_COLOR=210,138,4'
       'RESOLVED_COLOR=0,176,0'
       'CONFLICTING_COLOR=204,0,0'
+      'org.eclipse.egit.ui.UncommittedChangeForegroundColor=186,189,182'
+      'org.eclipse.egit.ui.IgnoredResourceForegroundColor=167,106,12'
+      'preference.decoration.outgoing_change_foreground_color=186,189,182'
+      'preference.decoration.ignored_resource_foreground_color=167,106,12'
 }
 
 IEclipsePreferences#org-eclipse-wst-xml-ui {
@@ -219,3 +223,4 @@ IEclipsePreferences#org-eclipse-debug-ui {
 	'org.eclipse.debug.ui.inColor=51,105,30'
 	'org.eclipse.debug.ui.outColor=0,0,0'
 }
+
