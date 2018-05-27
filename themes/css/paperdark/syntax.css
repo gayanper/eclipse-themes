@@ -504,3 +504,18 @@ IEclipsePreferences#com-reprezen-swagedit-openapi3 {
         'colorTagPropertyPreferences=38,139,210'
 }
 
+IEclipsePreferences#org-eclipse-wst-sse-ui {
+	preferences:
+		'content_assist_completion_replacement_background=200,200,0'
+		'content_assist_completion_replacement_foreground=200,0,0'
+		'content_assist_parameters_background=52,57,61'
+		'content_assist_parameters_foreground=238,238,238'
+		'content_assist_proposals_background=52,57,61'
+		'content_assist_proposals_foreground=238,238,238'
+}
+
+IEclipsePreferences#org-eclipse-wst-xsl-ui {
+	preferences:
+		'xsltagAttributeName=#c802cd | null | true | false | false | false'
+		'xsltagAttributeValue=#5b3fe6 | null | false | true | false | false'
+}
