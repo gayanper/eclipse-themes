@@ -52,6 +52,8 @@ IEclipsePreferences#org-eclipse-ui-workbench:org-eclipse-ui-themes { /* pseudo a
 		'OUTGOING_COLOR=238,238,238'
 		'RESOLVED_COLOR=108,210,17'
 		'org.eclipse.search.ui.match.highlight=206,92,0'
+		'org.eclipse.jdt.ui.ColoredLabels.inherited=114,159,207'
+		'org.eclipse.wst.jsdt.ui.ColoredLabels.inherited=114,159,207'
 }
 
 IEclipsePreferences#org-eclipse-ui-editors:org-eclipse-ui-genericeditor {
