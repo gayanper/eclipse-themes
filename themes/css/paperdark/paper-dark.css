@@ -285,3 +285,9 @@ Shell[style~='SWT.DROP_DOWN'][style~='SWT.POP_UP'][style~='SWT.ARROW'] > StyledT
   background-color: #515658;
   color: #CCCCCC;
 }
+
+/* Fix gradle UIs */
+GradleProjectSettingsComposite, GradleDistributionGroup, GradleUserHomeGroup {
+    background-color:#515658;
+    color:#eeeeee;
+}
