@@ -1,3 +1,4 @@
+@import url("platform:/plugin/org.eclipse.ui.themes/css/dark/e4-dark_basestyle.css");
 @import url("platform:/plugin/org.eclipse.ui.themes/css/dark/e4-dark_globalstyle.css");
 
 
@@ -266,6 +267,19 @@ ExpandableComposite Button[style~='SWT.CHECK']{
 	background-color: #515658;
 }
 
+/* Fix for properties tab */
+TabbedPropertyComposite CLabel {
+	background-color: #292929;
+}
+TabbedPropertyList {
+	swt-tabAreaBackground-color: #292929; 
+	color: #CCCCCC;
+	swt-tabDarkShadow-color: #292929;
+	swt-tabNormalShadow-color: #292929;
+	swt-tabBackground-color: #292929;
+}
+	
+	
 /* Fix rename popup */
 Shell[style~='SWT.DROP_DOWN'][style~='SWT.POP_UP'][style~='SWT.ARROW'] > StyledText {
   background-color: #515658;
