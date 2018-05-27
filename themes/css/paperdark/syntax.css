@@ -33,6 +33,9 @@ IEclipsePreferences#org-eclipse-ui-editors:org-eclipse-ui-themes { /* pseudo att
 		'writeOccurrenceIndicationColor=27,98,145'
 		'currentIPColor=66,19,65'
 		'secondaryIPColor=109,31,107'
+		'changeIndicationColor=193,125,17'
+		'additionIndicationColor=114,159,207'
+		'deletionIndicationColor=186,189,182'
 }
 
 IEclipsePreferences#org-eclipse-ui-workbench:org-eclipse-ui-themes { /* pseudo attribute added to allow contributions without replacing this node, see Bug 466075 */
