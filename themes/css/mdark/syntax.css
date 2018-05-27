@@ -63,6 +63,7 @@ IEclipsePreferences#org-eclipse-jdt-ui {
     'semanticHighlighting.typeParameter.color=224,226,228'
     'semanticHighlighting.typeParameter.enabled=true'
     'sourceHoverBackgroundColor=255,255,255'
+    'matchingBracketsColor=136,138,133'
 }
 
 IEclipsePreferences#org-eclipse-ui-editors {
