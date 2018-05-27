@@ -519,3 +519,10 @@ IEclipsePreferences#org-eclipse-wst-xsl-ui {
 		'xsltagAttributeName=#c802cd | null | true | false | false | false'
 		'xsltagAttributeValue=#5b3fe6 | null | false | true | false | false'
 }
+
+IEclipsePreferences#org-eclipse-wst-dtd-ui {
+	preferences:
+		'dtdKeyword=#ef2929 | null | false | false | false | false'
+		'dtdSymbol=#ef2929 | null | false | false | false | false'
+}
+
