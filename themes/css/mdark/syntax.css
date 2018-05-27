@@ -224,3 +224,7 @@ IEclipsePreferences#org-eclipse-debug-ui {
 	'org.eclipse.debug.ui.outColor=0,0,0'
 }
 
+IEclipsePreferences#org-eclipse-search {
+  preferences:
+	'org.eclipse.search.potentialMatch.fgColor=114,159,207'
+}
