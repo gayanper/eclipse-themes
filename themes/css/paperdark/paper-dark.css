@@ -26,7 +26,7 @@
 }
 
 .MToolControl.TrimStack {
-    frame-image:  url('./vsFrame.png');
+    frame-image: none;
     handle-image:  url('./dragHandle.png');
     frame-cuts: 0px 0px 6px 16px;
 }
@@ -34,6 +34,8 @@
 #PerspectiveSwitcher {
 	background-color: #292929;
 	eclipse-perspective-keyline-color: #E0E0E0;
+    frame-image: none;
+    handle-image: none;
 }
 
 .MPartSashContainer,
