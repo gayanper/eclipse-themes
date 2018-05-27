@@ -40,8 +40,14 @@
 }
 
 .MPartSashContainer,
-.MPart PageBook Label {
+.MPart PageBook Label,
+.MPart Hyperlink,
+.MPart Button {
 	background-color: #292929;
+}
+
+.MPart Hyperlink {
+	color: #9ac9d8;
 }
 
 #org-eclipse-debug-ui-BreakpointView Button[style~='SWT.CHECK'],
