@@ -297,3 +297,8 @@ GradleProjectSettingsComposite, GradleDistributionGroup, GradleUserHomeGroup {
     background-color:#515658;
     color:#eeeeee;
 }
+
+/* Fix message balloons */
+Shell[style~='SWT.POPUP'][style~='SWT.NO_TRIM']  Compsite {
+  background-color: #292929;
+}
