@@ -1,6 +1,10 @@
 @import url("platform:/plugin/org.eclipse.ui.themes/css/dark/e4-dark_basestyle.css");
 @import url("platform:/plugin/org.eclipse.ui.themes/css/dark/e4-dark_globalstyle.css");
 
+/* Fix for all modal dialog */
+Shell[style~='SWT.DIALOG_TRIM'][style~='SWT.APPLICATION_MODAL'] * {
+	background-color: #515658;
+}
 
 .MTrimmedWindow {
 	background-color: #292929;
@@ -267,12 +271,6 @@ Link {
 	swt-scrollbar-mouse-near-scroll-width: 15px;
 }
 
-/* Fix for workspace dialog */
-ExpandableComposite Composite,
-ExpandableComposite Button[style~='SWT.CHECK']{
-	background-color: #515658;
-}
-
 /* Fix for properties tab */
 TabbedPropertyComposite CLabel {
 	background-color: #292929;
@@ -299,6 +297,7 @@ GradleProjectSettingsComposite, GradleDistributionGroup, GradleUserHomeGroup {
 }
 
 /* Fix message balloons */
-Shell[style~='SWT.POPUP'][style~='SWT.NO_TRIM']  Compsite {
-  background-color: #515658;
+Shell[style~='SWT.NO_TRIM'][style~='SWT.POP_UP'] Composite,
+Shell[style~='SWT.NO_TRIM'][style~='SWT.POP_UP'] Composite Composite {
+	background-color: #515658;
 }
