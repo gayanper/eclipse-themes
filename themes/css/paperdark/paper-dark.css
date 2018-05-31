@@ -2,9 +2,13 @@
 @import url("platform:/plugin/org.eclipse.ui.themes/css/dark/e4-dark_globalstyle.css");
 
 /* Fix for all modal dialog */
-Shell[style~='SWT.DIALOG_TRIM'][style~='SWT.APPLICATION_MODAL'] * {
+Shell[style~='SWT.DIALOG_TRIM'][style~='SWT.APPLICATION_MODAL'] Label,
+Shell[style~='SWT.DIALOG_TRIM'][style~='SWT.APPLICATION_MODAL'] Composite,
+Shell[style~='SWT.DIALOG_TRIM'][style~='SWT.APPLICATION_MODAL'] Button[style~='SWT.CHECK'],
+Shell[style~='SWT.DIALOG_TRIM'][style~='SWT.APPLICATION_MODAL'] Button[style~='SWT.RADIO'] {
 	background-color: #515658;
 }
+
 
 .MTrimmedWindow {
 	background-color: #292929;
@@ -300,4 +304,10 @@ GradleProjectSettingsComposite, GradleDistributionGroup, GradleUserHomeGroup {
 Shell[style~='SWT.NO_TRIM'][style~='SWT.POP_UP'] Composite,
 Shell[style~='SWT.NO_TRIM'][style~='SWT.POP_UP'] Composite Composite {
 	background-color: #515658;
+}
+
+/* Fix resource not found and class source not found editors */
+#org-eclipse-e4-ui-compatibility-editor Label,
+#org-eclipse-e4-ui-compatibility-editor StyledText {
+	background-color: #292929;
 }
