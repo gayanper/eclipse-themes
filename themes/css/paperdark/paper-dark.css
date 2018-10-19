@@ -311,3 +311,10 @@ Shell[style~='SWT.NO_TRIM'][style~='SWT.POP_UP'] Composite Composite {
 #org-eclipse-e4-ui-compatibility-editor StyledText {
 	background-color: #292929;
 }
+
+/* Fix Breadcrumb view */
+#BreadcrumbItemComposite,
+#BreadcrumbItemDetailComposite,
+#BreadcrumbItemDropDownToolBar {
+	background-color: #292929;
+}
