@@ -8,7 +8,6 @@
   <packaging>pom</packaging>
   <modules>
     <module>feature</module>
-    <module>pm</module>
     <module>site</module>
     <module>themes</module>
     <module>core</module>
