@@ -528,3 +528,41 @@ IEclipsePreferences#org-eclipse-wst-dtd-ui {
 		'dtdSymbol=#ef2929 | null | false | false | false | false'
 }
 
+IEclipsePreferences#org-dadacoalition-yedit {
+	preferences:
+		'colorAliasPreferences=18,144,195'
+		'colorAnchorPreferences=18,144,195'
+		'colorCommentPreference=128,128,128'
+		'colorConstantPreferences=23,198,163'
+		'colorDefaultPreference=211,215,207'
+		'colorDocumentPreference=211,215,207'
+		'colorKeyPreference=204,108,29'
+		'colorScalarPreference=211,215,207'
+		'colorTagPropertyPreferences=18,144,195'
+}
+
+IEclipsePreferences#com-reprezen-swagedit-openapi3 {
+	preferences:
+		'colorAliasPreferences=18,144,195'
+		'colorAnchorPreferences=18,144,195'
+		'colorCommentPreference=128,128,128'
+		'colorConstantPreferences=23,198,163'
+		'colorDefaultPreference=211,215,207'
+		'colorDocumentPreference=211,215,207'
+		'colorKeyPreference=204,108,29'
+		'colorScalarPreference=211,215,207'
+		'colorTagPropertyPreferences=18,144,195'
+}
+
+IEclipsePreferences#com-reprezen-swagedit {
+	preferences:
+		'colorAliasPreferences=18,144,195'
+		'colorAnchorPreferences=18,144,195'
+		'colorCommentPreference=128,128,128'
+		'colorConstantPreferences=23,198,163'
+		'colorDefaultPreference=211,215,207'
+		'colorDocumentPreference=211,215,207'
+		'colorKeyPreference=204,108,29'
+		'colorScalarPreference=211,215,207'
+		'colorTagPropertyPreferences=18,144,195'
+}
