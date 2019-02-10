@@ -568,7 +568,8 @@ IEclipsePreferences#com-reprezen-swagedit {
 }
 
 IEclipsePreferences#org-codehaus-groovy-eclipse-ui {
-	preferences: 'groovy.editor.highlight.assert.color=204,108,29'
+	preferences: 
+		'groovy.editor.highlight.assert.color=204,108,29'
 		'groovy.editor.highlight.assert.color_bold=false'
 		'groovy.editor.highlight.javakeywords.color=204,108,29'
 		'groovy.editor.highlight.javakeywords.color_bold=false'
@@ -576,4 +577,12 @@ IEclipsePreferences#org-codehaus-groovy-eclipse-ui {
 		'groovy.editor.highlight.javatypes.color_bold=false'
 		'groovy.editor.highlight.return.color=204,108,29'
 		'groovy.editor.highlight.return.color_bold=false'
+}
+
+IEclipsePreferences#de-jcup-jenkinseditor-plugin {
+	preferences: 
+		'colorGroovyDoc=83,166,124'
+		'colorJenkinsVariables=0,98,196' 
+		'colorNormalStrings=0,128,255'
+		'colorNormalText=221,221,221'
 }
