@@ -11,7 +11,7 @@ Shell[style~='SWT.DIALOG_TRIM'][style~='SWT.APPLICATION_MODAL'] Button[style~='S
 
 
 .MTrimmedWindow {
-	background-color: #292929;
+	background-color: #2f2f2f;
 }
 
 .MPartStack {
@@ -20,18 +20,18 @@ Shell[style~='SWT.DIALOG_TRIM'][style~='SWT.APPLICATION_MODAL'] Button[style~='S
 }
 
 .MTrimBar {
-	background-color: #292929;
+	background-color: #2f2f2f;
 }
 
 .MToolBar,
 .MToolControl,
 .MPartStack > * > ToolBar,
 .MToolControl > * > ToolBar {
-	background-color: #292929;
+	background-color: #2f2f2f;
 }
 
 .MTrimBar#org-eclipse-ui-main-toolbar  {
-	background-color: #292929;
+	background-color: #2f2f2f;
 }
 
 .MToolControl.TrimStack {
@@ -41,7 +41,7 @@ Shell[style~='SWT.DIALOG_TRIM'][style~='SWT.APPLICATION_MODAL'] Button[style~='S
 }
 
 #PerspectiveSwitcher {
-	background-color: #292929;
+	background-color: #2f2f2f;
 	eclipse-perspective-keyline-color: #E0E0E0;
     frame-image: none;
     handle-image: none;
@@ -52,7 +52,7 @@ Shell[style~='SWT.DIALOG_TRIM'][style~='SWT.APPLICATION_MODAL'] Button[style~='S
 .MPart Hyperlink,
 .MPart Button,
 .MPart Label {
-	background-color: #292929;
+	background-color: #2f2f2f;
 }
 
 .MPart Hyperlink {
@@ -63,26 +63,26 @@ Shell[style~='SWT.DIALOG_TRIM'][style~='SWT.APPLICATION_MODAL'] Button[style~='S
 #org-eclipse-debug-ui-BreakpointView Button[style~='SWT.RADIO'],
 Form Button[style~='SWT.CHECK'],
 Form Button[style~='SWT.RADIO'] {
-	background-color: #292929;
+	background-color: #2f2f2f;
 	color: #b5b1b1;
 }
 
 #org-eclipse-jdt-junit-ResultView Text {
-	background-color: #292929;
+	background-color: #2f2f2f;
 }
 
 /*
-swt-tab-renderer: url('bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.CTabRendering');    swt-selected-tab-fill: #292929 #292929 100% 100%;
+swt-tab-renderer: url('bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.CTabRendering');    swt-selected-tab-fill: #2f2f2f #2f2f2f 100% 100%;
 */
 .MPartStack,
 CTabFolder {
 	swt-tab-renderer: url('bundleclass://org.gap.eclipse.themes/org.gap.eclipse.themes.Renderer');
-	swt-selected-tab-fill: #292929 #292929 100% 100%;
-	swt-unselected-tabs-color: #292929;
-	swt-outer-keyline-color: #292929;
-	swt-inner-keyline-color: #292929;
-	swt-tab-outline: #292929;
-    background-color: #292929;
+	swt-selected-tab-fill: #2f2f2f #2f2f2f 100% 100%;
+	swt-unselected-tabs-color: #2f2f2f;
+	swt-outer-keyline-color: #2f2f2f;
+	swt-inner-keyline-color: #2f2f2f;
+	swt-tab-outline: #2f2f2f;
+    background-color: #2f2f2f;
 	padding: 0px;
 	swt-shadow-visible: false;
 	swt-mru-visible: false;
@@ -101,23 +101,23 @@ CTabFolder {
 
 
 .MPartStack.active {
-	swt-selected-tab-fill: #292929;
-	swt-tab-outline: #292929;
-    background-color: #292929;
-	swt-outer-keyline-color: #292929;
-	swt-inner-keyline-color: #292929;
+	swt-selected-tab-fill: #2f2f2f;
+	swt-tab-outline: #2f2f2f;
+    background-color: #2f2f2f;
+	swt-outer-keyline-color: #2f2f2f;
+	swt-inner-keyline-color: #2f2f2f;
 	color: #CCCCCC;
 }
 
 /* Fix side by side tab folder */
 #org-eclipse-ui-editorss {
 	/*swt-tab-renderer: url('bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.CTabRendering');*/
-    swt-selected-tab-fill: #292929;
-	swt-unselected-tabs-color: #292929;
-	swt-outer-keyline-color: #292929;
-	swt-inner-keyline-color: #292929;
-	swt-tab-outline: #292929;
-   	background-color: #292929;
+    swt-selected-tab-fill: #2f2f2f;
+	swt-unselected-tabs-color: #2f2f2f;
+	swt-outer-keyline-color: #2f2f2f;
+	swt-inner-keyline-color: #2f2f2f;
+	swt-tab-outline: #2f2f2f;
+   	background-color: #2f2f2f;
 	padding: 0px;
 	swt-shadow-visible: false;
 	swt-mru-visible: false;
@@ -132,7 +132,7 @@ CTabItem:selected {
 }
 
 CTabFolder Canvas {
-	background-color: #292929;
+	background-color: #2f2f2f;
 }
 
 /* FormHeading styles */
@@ -145,12 +145,12 @@ CTabFolder Canvas {
 .MPart FormHeading > TitleRegion > StyledText,
 .MPart FormHeading LayoutComposite,
 .MPart FormHeading ImageHyperlink {
-    background-color: #292929;
+    background-color: #2f2f2f;
     color: #9ac9d8;
 }
 .MPart FormHeading {
-    background: #292929;
-    background-image: #292929;
+    background: #2f2f2f;
+    background-image: #2f2f2f;
 }
 .MPartStack.active .MPart FormHeading,
 .MPartStack.active .MPart FormHeading > ToolBar,
@@ -160,29 +160,29 @@ CTabFolder Canvas {
 .MPartStack.active .MPart FormHeading > TitleRegion > StyledText,
 .MPartStack.active .MPart FormHeading LayoutComposite,
 .MPartStack.active .MPart FormHeading ImageHyperlink {
-    background-color: #292929;
+    background-color: #2f2f2f;
     color: #9ac9d8;
 }
 .MPartStack.active .MPart FormHeading {
-    background: #292929;
-    background-image: #292929;
+    background: #2f2f2f;
+    background-image: #2f2f2f;
 }
 .MPart FormHeading,
 .MPart FormHeading > TitleRegion {
     swt-background-mode: none;
 }
 .MPart FormHeading > CLabel {
-    background-color: #292929;
+    background-color: #2f2f2f;
     color: #E98787;
 }
 .MPartStack.active .MPart FormHeading > CLabel {
-    background-color: #292929;
+    background-color: #2f2f2f;
     color: #E98787;
 }
 
 Form {
 	/* Bug 465148: Additional styling for the Form */
-	text-background-color: #292929;
+	text-background-color: #2f2f2f;
 
 	tb-toggle-hover-color: #505050;
 	tb-toggle-color: #505050;
@@ -197,15 +197,15 @@ Form ListEditorComposite,
 SashForm,
 Sash,
 #IDEWindow Composite {
-	background-color: #292929;
+	background-color: #2f2f2f;
 }
 
 Section {
-	background-color: #292929;
+	background-color: #2f2f2f;
   	color: #505050;
   	background-color-titlebar: #515658;
   	background-color-gradient-titlebar: #515658;
-  	border-color-titlebar: #292929;
+  	border-color-titlebar: #2f2f2f;
 }
 
 Section Composite,
@@ -214,7 +214,7 @@ Section Hyperlink,
 DependenciesComposite,
 DependenciesComposite-DependenciesListComposite,
 DependenciesComposite-PropertiesListComposite {
-	background-color: #292929;
+	background-color: #2f2f2f;
 }
 
 Section > Label {
@@ -224,7 +224,7 @@ Section > Label {
 .MPartStack Tree,
 .MPartStack Table,
 .MPartStack List {
-	background-color: #292929;
+	background-color: #2f2f2f;
 }
 
 
@@ -234,17 +234,17 @@ Section > Label {
 #org-eclipse-ui-ProgressBar Canvas,
 #org-eclipse-ui-ProgressBar Composite {
     color: #CCCCCC;
-	background-color: #292929;
+	background-color: #2f2f2f;
 }
 
 #org-eclipse-ui-StatusLine CLabel {
     color: #CCCCCC;
-	background-color: #292929;
+	background-color: #2f2f2f;
 }
 
 StatusLine, ImageBasedFrame {
     color: #BDBAB7;
-	background-color: #292929;
+	background-color: #2f2f2f;
 }
 
 /* from syntax files */
@@ -282,14 +282,14 @@ Link {
 
 /* Fix for properties tab */
 TabbedPropertyComposite CLabel {
-	background-color: #292929;
+	background-color: #2f2f2f;
 }
 TabbedPropertyList {
-	swt-tabAreaBackground-color: #292929; 
+	swt-tabAreaBackground-color: #2f2f2f; 
 	color: #CCCCCC;
-	swt-tabDarkShadow-color: #292929;
-	swt-tabNormalShadow-color: #292929;
-	swt-tabBackground-color: #292929;
+	swt-tabDarkShadow-color: #2f2f2f;
+	swt-tabNormalShadow-color: #2f2f2f;
+	swt-tabBackground-color: #2f2f2f;
 }
 	
 	
@@ -314,12 +314,12 @@ Shell[style~='SWT.NO_TRIM'][style~='SWT.POP_UP'] Composite Composite {
 /* Fix resource not found and class source not found editors */
 #org-eclipse-e4-ui-compatibility-editor Label,
 #org-eclipse-e4-ui-compatibility-editor StyledText {
-	background-color: #292929;
+	background-color: #2f2f2f;
 }
 
 /* Fix Breadcrumb view */
 #BreadcrumbItemComposite,
 #BreadcrumbItemDetailComposite,
 #BreadcrumbItemDropDownToolBar {
-	background-color: #292929;
+	background-color: #2f2f2f;
 }
