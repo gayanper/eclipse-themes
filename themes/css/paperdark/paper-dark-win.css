@@ -17,3 +17,14 @@ Shell[style~='SWT.MENU'][style~='SWT.TITLE'] Table {
 	swt-selection-border-color: #7F7D68;
 	swt-hot-border-color: #545454;
 }
+
+/* Fix Tree colors for windows, taken by default dark theme */
+Tree {
+	swt-tree-arrows-color:#cccccc;
+	swt-tree-arrows-mode: triangle; 
+	swt-selection-foreground-color: #fcfcf9;
+	swt-selection-background-color: #494949;
+	swt-hot-background-color: #2F2F2F;
+	swt-selection-border-color: #7F7D68;
+	swt-hot-border-color: #545454;
+}

@@ -323,3 +323,9 @@ Shell[style~='SWT.NO_TRIM'][style~='SWT.POP_UP'] Composite Composite {
 #BreadcrumbItemDropDownToolBar {
 	background-color: #2f2f2f;
 }
+
+/* Fix Dialogs Contents such as Git Commit */
+Shell[style~='SWT.APPLICATION_MODAL'] Composite,
+Shell[style~='SWT.APPLICATION_MODAL'] Section {
+	background-color: #515658;
+}
