@@ -584,8 +584,15 @@ IEclipsePreferences#org-codehaus-groovy-eclipse-ui {
 
 IEclipsePreferences#de-jcup-jenkinseditor-plugin {
 	preferences: 
-		'colorGroovyDoc=83,166,124'
-		'colorJenkinsVariables=0,98,196' 
-		'colorNormalStrings=0,128,255'
-		'colorNormalText=221,221,221'
+		'colorAnnotations=97,97,97'
+		'colorGStrings=255,128,64'
+		'colorGroovyDoc=0,128,192'
+		'colorGroovyKeywords=0,128,0'
+		'colorJavaKeywords=0,128,0'
+		'colorJavaLiteralKeywords=255,0,128'
+		'colorJenkinsKeywords=0,128,0'
+		'colorJenkinsVariables=97,97,97' 
+		'colorNormalStrings=128,128,128'
+		'colorNormalText=192,192,192'
+		
 }
