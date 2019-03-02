@@ -25,14 +25,8 @@ public class Activator extends AbstractUIPlugin {
 		instance = this;
 
 		// Creates the custom css files.
-		createIfNotExist(CustomizeFileMapping
-				.customizeFile(ThemeId.MATERIAL_DARK));
-		createIfNotExist(CustomizeFileMapping
-				.customizeFile(ThemeId.MATERIAL_DARK_BW));
-		createIfNotExist(CustomizeFileMapping
-				.customizeFile(ThemeId.MATERIAL_LIGHT));
-		createIfNotExist(CustomizeFileMapping.customizeFile(ThemeId.PAPER_DARK));
-		createIfNotExist(CustomizeFileMapping.customizeFile(ThemeId.PAPER_WHITE));
+		createIfNotExist(CustomizeFileMapping.customizeFile(ThemeId.DARK));
+		createIfNotExist(CustomizeFileMapping.customizeFile(ThemeId.LIGHT));
 	}
 
 	private void createIfNotExist(File file) throws IOException,

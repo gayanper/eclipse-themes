@@ -6,9 +6,8 @@ package org.gap.eclipse.themes;
  * @author gayanper
  */
 public enum ThemeId {
-	MATERIAL_LIGHT("org.gap.eclipse.themes.material-l"), MATERIAL_DARK("org.gap.eclipse.themes.material-d"),
-	MATERIAL_DARK_BW("org.gap.eclipse.themes.material-d-bw"), PAPER_WHITE("org.gap.eclipse.themes.paper-white"),
-	PAPER_DARK("org.gap.eclipse.themes.paper-d");
+	DARK("org.eclipse.e4.ui.css.theme.e4_dark"), 
+	LIGHT("org.eclipse.e4.ui.css.theme.e4_default");
 
 	private String themeId;
 
@@ -27,16 +26,10 @@ public enum ThemeId {
 
 	public static ThemeId forId(String id) {
 		switch (id) {
-		case "org.gap.eclipse.themes.material-l":
-			return MATERIAL_LIGHT;
-		case "org.gap.eclipse.themes.material-d":
-			return MATERIAL_DARK;
-		case "org.gap.eclipse.themes.material-d-bw":
-			return MATERIAL_DARK_BW;
-		case "org.gap.eclipse.themes.paper-white":
-			return PAPER_WHITE;
-		case "org.gap.eclipse.themes.paper-d":
-			return PAPER_DARK;
+		case "org.eclipse.e4.ui.css.theme.e4_dark":
+			return DARK;
+		case "org.eclipse.e4.ui.css.theme.e4_default":
+			return LIGHT;
 		default:
 			return null;
 		}

@@ -3,10 +3,17 @@ package org.gap.eclipse.themes.pref;
 import java.io.File;
 import java.io.IOException;
 import java.net.URISyntaxException;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Set;
+import java.util.stream.Collectors;
 
 import org.eclipse.core.filesystem.EFS;
 import org.eclipse.core.filesystem.IFileStore;
+import org.eclipse.e4.core.contexts.IEclipseContext;
 import org.eclipse.e4.ui.css.swt.theme.ITheme;
+import org.eclipse.e4.ui.css.swt.theme.IThemeEngine;
+import org.eclipse.e4.ui.model.application.MApplication;
 import org.eclipse.jface.preference.PreferencePage;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.SelectionEvent;
@@ -23,21 +30,9 @@ import org.eclipse.ui.PlatformUI;
 import org.eclipse.ui.ide.IDE;
 import org.gap.eclipse.themes.CustomizeFileMapping;
 import org.gap.eclipse.themes.ThemeId;
-import org.gap.eclipse.themes.core.ThemesManager;
-
-import com.google.common.base.Function;
-import com.google.common.base.Predicate;
-import com.google.common.collect.FluentIterable;
-import com.google.common.collect.ImmutableSet;
-import com.google.common.collect.Iterables;
-import com.google.common.collect.Lists;
 
 @SuppressWarnings("restriction")
-public class CustomizeThemePage extends PreferencePage implements
-		IWorkbenchPreferencePage {
-
-	// TODO: Introduce DI
-	private ThemesManager manager = new ThemesManager();
+public class CustomizeThemePage extends PreferencePage implements IWorkbenchPreferencePage {
 
 	public CustomizeThemePage() {
 	}
@@ -51,7 +46,6 @@ public class CustomizeThemePage extends PreferencePage implements
 	protected Control createContents(Composite parent) {
 		final Composite content = new Composite(parent, SWT.NULL);
 		final GridLayout layout = new GridLayout();
-
 		layout.numColumns = 2;
 		layout.marginHeight = 0;
 		layout.marginWidth = 0;
@@ -64,34 +58,28 @@ public class CustomizeThemePage extends PreferencePage implements
 	}
 
 	private void createEditButtons(Composite content) {
-		final ImmutableSet<String> pluginThemes = FluentIterable
-				.from(Lists.newArrayList(ThemeId.values()))
-				.transform(new Function<ThemeId, String>() {
-
-					@Override
-					public String apply(ThemeId input) {
-						return input.getId();
-					}
-				}).toSet();
-
-		final Iterable<ITheme> allThemes = Iterables.filter(
-				manager.getAllThemes(), new Predicate<ITheme>() {
-
-					@Override
-					public boolean apply(ITheme input) {
-						return pluginThemes.contains(input.getId());
-					}
-				});
-
-		for (ITheme theme : allThemes) {
+		for (ITheme theme : allSupportingThemes()) {
 			Label label = new Label(content, SWT.NULL);
 			label.setText("Custom css file for [" + theme.getLabel() + "]");
 
 			Button button = new Button(content, SWT.PUSH);
 			button.setText("Edit");
-			button.addSelectionListener(new EditAction(ThemeId.forId(theme
-					.getId())));
+			button.addSelectionListener(new EditAction(ThemeId.forId(theme.getId())));
 		}
+	}
+
+	private List<ITheme> allSupportingThemes() {
+		final Set<String> supportedIds = Arrays.stream(ThemeId.values()).map(t -> t.getId())
+				.collect(Collectors.toSet());
+		return getThemeEngine().getThemes().stream().filter(t -> supportedIds.contains(t.getId()))
+				.collect(Collectors.toList());
+	}
+
+	private IThemeEngine getThemeEngine() {
+		MApplication application = (MApplication) PlatformUI.getWorkbench().getService(MApplication.class);
+		IEclipseContext context = application.getContext();
+		IThemeEngine engine = context.get(IThemeEngine.class);
+		return engine;
 	}
 
 	private static class EditAction implements SelectionListener {
@@ -106,10 +94,9 @@ public class CustomizeThemePage extends PreferencePage implements
 		public void widgetSelected(SelectionEvent e) {
 			try {
 				final File file = CustomizeFileMapping.customizeFile(themeId);
-				final IFileStore fileStore = EFS.getLocalFileSystem().getStore(
-						file.toURI());
-				IDE.openEditorOnFileStore(PlatformUI.getWorkbench()
-						.getActiveWorkbenchWindow().getActivePage(), fileStore);
+				final IFileStore fileStore = EFS.getLocalFileSystem().getStore(file.toURI());
+				IDE.openEditorOnFileStore(PlatformUI.getWorkbench().getActiveWorkbenchWindow().getActivePage(),
+						fileStore);
 			} catch (PartInitException | URISyntaxException | IOException ex) {
 				// TODO: do proper logging.
 				ex.printStackTrace();

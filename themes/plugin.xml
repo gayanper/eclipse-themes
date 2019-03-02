@@ -3,75 +3,28 @@
 <plugin>
    <extension
          point="org.eclipse.e4.ui.css.swt.theme">
-      <theme
-            basestylesheeturi="css/mdark/dark.css"
-            id="org.gap.eclipse.themes.material-d"
-            label="Material Dark">
-      </theme>
       <stylesheet
-            uri="css/mdark/syntax.css">
+            uri="css/light-ext/syntax.css">
          <themeid
-               refid="org.gap.eclipse.themes.material-d">
-         </themeid>
-         <osgiresourcelocator
-               uri="platform:/plugin/org.gap.eclipse.themes/images/">
-         </osgiresourcelocator>
-      </stylesheet>
-      <theme
-            basestylesheeturi="css/mlight/light.css"
-            id="org.gap.eclipse.themes.material-l"
-            label="Material Light">
-      </theme>
-      <stylesheet
-            uri="css/mlight/syntax.css">
-         <themeid
-               refid="org.gap.eclipse.themes.material-l">
-         </themeid>
-         <osgiresourcelocator
-               uri="platform:/plugin/org.gap.eclipse.themes/images/">
-         </osgiresourcelocator>
-      </stylesheet>
-      <theme
-            basestylesheeturi="css/mdark/dark.css"
-            id="org.gap.eclipse.themes.material-d-bw"
-            label="Material Dark Black &amp; White">
-      </theme>
-      <stylesheet
-            uri="css/mdark/syntax-bw.css">
-         <themeid
-               refid="org.gap.eclipse.themes.material-d-bw">
-         </themeid>
-         <osgiresourcelocator
-               uri="platform:/plugin/org.gap.eclipse.themes/images/">
-         </osgiresourcelocator>
-      </stylesheet>
-      <theme
-            basestylesheeturi="css/paperwhite/paper-white.css"
-            id="org.gap.eclipse.themes.paper-white"
-            label="Paper White">
-      </theme>
-      <stylesheet
-            uri="css/paperwhite/syntax.css">
-         <themeid
-               refid="org.gap.eclipse.themes.paper-white">
+               refid="org.eclipse.e4.ui.css.theme.e4_default">
          </themeid>
       </stylesheet>
-      <theme
-            basestylesheeturi="css/paperdark/paper-dark.css"
-            id="org.gap.eclipse.themes.paper-d"
-            label="Paper Dark"
-            os="linux">
-      </theme>
-      <theme
-            basestylesheeturi="css/paperdark/paper-dark-win.css"
-            id="org.gap.eclipse.themes.paper-d"
-            label="Paper Dark"
-            os="win32">
-      </theme>
       <stylesheet
-            uri="css/paperdark/syntax.css">
+            uri="css/dark-ext/dark-ext.css">
          <themeid
-               refid="org.gap.eclipse.themes.paper-d">
+               refid="org.eclipse.e4.ui.css.theme.e4_dark">
+         </themeid>
+      </stylesheet>
+      <stylesheet
+            uri="css/dark-ext/syntax.css">
+         <themeid
+               refid="org.eclipse.e4.ui.css.theme.e4_dark">
+         </themeid>
+      </stylesheet>
+      <stylesheet
+            uri="css/light-ext/light-ext.css">
+         <themeid
+               refid="org.eclipse.e4.ui.css.theme.e4_default">
          </themeid>
       </stylesheet>
    </extension>

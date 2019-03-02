@@ -1,0 +1,37 @@
+.MPartStack {
+	swt-tab-renderer: url('bundleclass://org.gap.eclipse.themes/org.gap.eclipse.themes.Renderer');
+    swt-selected-tab-fill: '#org-eclipse-ui-workbench-INACTIVE_TAB_BG_START' '#org-eclipse-ui-workbench-INACTIVE_TAB_BG_START' 100%; /* title background for selected tab */
+    swt-unselected-tabs-color: '#org-eclipse-ui-workbench-INACTIVE_UNSELECTED_TABS_COLOR_START' '#org-eclipse-ui-workbench-INACTIVE_UNSELECTED_TABS_COLOR_START' 100% 100%; /* title background for unselected tab */
+    swt-outer-keyline-color: '#org-eclipse-ui-workbench-INACTIVE_TAB_OUTER_KEYLINE_COLOR'; /* border color for whole tabs container */
+    swt-inner-keyline-color: '#org-eclipse-ui-workbench-INACTIVE_TAB_INNER_KEYLINE_COLOR';
+    swt-tab-outline: '#org-eclipse-ui-workbench-INACTIVE_TAB_OUTLINE_COLOR'; /* border color for selected tab */
+    swt-shadow-visible: false;
+    swt-mru-visible: true;
+    swt-corner-radius: 6px;
+	swt-simple: true;
+}
+
+.MPartStack.active {
+    swt-selected-tab-fill: '#org-eclipse-ui-workbench-INACTIVE_TAB_BG_START' '#org-eclipse-ui-workbench-INACTIVE_TAB_BG_START' 100%; /* title background for selected tab */
+    swt-unselected-tabs-color: '#org-eclipse-ui-workbench-INACTIVE_UNSELECTED_TABS_COLOR_START' '#org-eclipse-ui-workbench-INACTIVE_UNSELECTED_TABS_COLOR_START' 100% 100%; /* title background for unselected tab */
+    swt-outer-keyline-color: '#org-eclipse-ui-workbench-INACTIVE_TAB_OUTER_KEYLINE_COLOR'; /* border color for whole tabs container */
+    swt-inner-keyline-color: '#org-eclipse-ui-workbench-INACTIVE_TAB_INNER_KEYLINE_COLOR';
+    swt-tab-outline: '#org-eclipse-ui-workbench-INACTIVE_TAB_OUTLINE_COLOR'; /* border color for selected tab */
+}
+
+.MPartStack.active > CTabItem:selected,
+.MPartStack.active > CTabItem:selected CLabel {
+	color: #00FFFF;
+}
+
+
+CTabFolder[style~='SWT.DOWN'][style~='SWT.BOTTOM'],
+CTabFolder {
+    swt-tab-renderer: url('bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.CTabRendering');
+    swt-unselected-hot-tab-color-background: #4D4D4D;
+}
+
+.MPartStack .MToolBar {
+	background-color: '#org-eclipse-ui-workbench-INACTIVE_UNSELECTED_TABS_COLOR_START' '#org-eclipse-ui-workbench-INACTIVE_UNSELECTED_TABS_COLOR_START' 100% 100%; 
+}
+

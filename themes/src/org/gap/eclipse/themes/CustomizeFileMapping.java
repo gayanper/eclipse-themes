@@ -24,11 +24,8 @@ public final class CustomizeFileMapping {
 	private static final Map<ThemeId, String> MAPPINGS = new HashMap<>();
 
 	static {
-		MAPPINGS.put(ThemeId.MATERIAL_DARK, "custom-dark.css");
-		MAPPINGS.put(ThemeId.MATERIAL_DARK_BW, "custom-dark-bw.css");
-		MAPPINGS.put(ThemeId.MATERIAL_LIGHT, "custom-light.css");
-		MAPPINGS.put(ThemeId.PAPER_DARK, "custom-paper-dark.css");
-		MAPPINGS.put(ThemeId.PAPER_WHITE, "custom-paper-white.css");
+		MAPPINGS.put(ThemeId.DARK, "custom-dark.css");
+		MAPPINGS.put(ThemeId.LIGHT, "custom-light.css");
 	}
 
 	private CustomizeFileMapping() {

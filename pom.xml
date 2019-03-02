@@ -10,7 +10,6 @@
     <module>feature</module>
     <module>site</module>
     <module>themes</module>
-    <module>core</module>
   </modules>
   <build>
     <plugins>
