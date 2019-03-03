@@ -1,0 +1,8 @@
+title: Eclipse-themes
+description: Eclipse themes and some plugins to enhance the developer experience.
+google_analytics: 
+show_downloads: true
+theme: jekyll-theme-architect
+
+gems:
+  - jekyll-mentions
