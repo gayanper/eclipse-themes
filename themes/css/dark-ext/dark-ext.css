@@ -24,13 +24,6 @@
 	color: #00FFFF;
 }
 
-
-CTabFolder[style~='SWT.DOWN'][style~='SWT.BOTTOM'],
-CTabFolder {
-    swt-tab-renderer: url('bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.CTabRendering');
-    swt-unselected-hot-tab-color-background: #4D4D4D;
-}
-
 .MPartStack .MToolBar {
 	background-color: '#org-eclipse-ui-workbench-INACTIVE_UNSELECTED_TABS_COLOR_START' '#org-eclipse-ui-workbench-INACTIVE_UNSELECTED_TABS_COLOR_START' 100% 100%; 
 }

@@ -6,14 +6,9 @@
 	swt-simple: true;
 }
 
+
 .MPartStack.active > CTabItem:selected,
 .MPartStack.active > CTabItem:selected CLabel {
 	color: #00ffff;
 }
-
-CTabFolder[style~='SWT.DOWN'][style~='SWT.BOTTOM'],
-CTabFolder {
-    swt-tab-renderer: url('bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.CTabRendering');
-}
-
 
