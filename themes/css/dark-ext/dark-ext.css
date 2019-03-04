@@ -9,6 +9,7 @@
     swt-mru-visible: true;
     swt-corner-radius: 6px;
 	swt-simple: true;
+	selected-border-color: #00ffff;
 }
 
 .MPartStack.active {
@@ -21,10 +22,9 @@
 
 .MPartStack.active > CTabItem:selected,
 .MPartStack.active > CTabItem:selected CLabel {
-	color: #00FFFF;
+	color: #00ffff;
 }
 
 .MPartStack .MToolBar {
 	background-color: '#org-eclipse-ui-workbench-INACTIVE_UNSELECTED_TABS_COLOR_START' '#org-eclipse-ui-workbench-INACTIVE_UNSELECTED_TABS_COLOR_START' 100% 100%; 
 }
-

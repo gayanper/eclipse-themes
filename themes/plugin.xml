@@ -43,4 +43,15 @@
             name="Customize Theme">
       </page>
    </extension>
+   <extension
+         point="org.eclipse.e4.ui.css.core.propertyHandler">
+      <handler
+            adapter="org.eclipse.e4.ui.css.swt.dom.CTabFolderElement"
+            composite="false"
+            handler="org.gap.eclipse.themes.RendererCSSHandler">
+         <property-name
+               name="selected-border-color">
+         </property-name>
+      </handler>
+   </extension>
 </plugin>
