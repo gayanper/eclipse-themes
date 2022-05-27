@@ -3,55 +3,34 @@
 <plugin>
    <extension
          point="org.eclipse.e4.ui.css.swt.theme">
-      <stylesheet
-            uri="css/light-ext/syntax.css">
-         <themeid
-               refid="org.eclipse.e4.ui.css.theme.e4_default">
-         </themeid>
-      </stylesheet>
-      <stylesheet
-            uri="css/dark-ext/dark-ext.css">
-         <themeid
-               refid="org.eclipse.e4.ui.css.theme.e4_dark">
-         </themeid>
-      </stylesheet>
-      <stylesheet
-            uri="css/dark-ext/syntax.css">
-         <themeid
-               refid="org.eclipse.e4.ui.css.theme.e4_dark">
-         </themeid>
-      </stylesheet>
-      <stylesheet
-            uri="css/light-ext/light-ext.css">
-         <themeid
-               refid="org.eclipse.e4.ui.css.theme.e4_default">
-         </themeid>
-      </stylesheet>
-   </extension>
-   <extension
-         point="org.eclipse.ui.startup">
-      <startup
-            class="org.gap.eclipse.themes.PluginStartup">
-      </startup>
-   </extension>
-   <extension
-         point="org.eclipse.ui.preferencePages">
-      <page
-            category="org.eclipse.ui.preferencePages.Views"
-            class="org.gap.eclipse.themes.pref.CustomizeThemePage"
-            id="org.gap.eclipse.themes.customizeTheme"
-            name="Customize Theme">
-      </page>
+      <theme
+            basestylesheeturi="css/vscode/vscode-light-mac.css"
+            id="org.gap.themes.vscode.light"
+            label="VSCode Light"
+            os="macosx">
+      </theme>
+      <theme
+            basestylesheeturi="css/vscode/vscode-light-win.css"
+            id="org.gap.themes.vscode.light"
+            label="VSCode Light"
+            os="win32">
+      </theme>
    </extension>
    <extension
          point="org.eclipse.e4.ui.css.core.propertyHandler">
       <handler
             adapter="org.eclipse.e4.ui.css.swt.dom.CTabFolderElement"
-            composite="false"
-            handler="org.gap.eclipse.themes.RendererCSSHandler">
+            handler="org.gap.eclipse.themes.e4.renders.swt.CssPropertySelectedTabHighlightThickness">
          <property-name
-               name="selected-border-color">
+               name="swt-selected-tab-highlight-thickness">
          </property-name>
       </handler>
+   </extension>
+   <extension
+         point="org.eclipse.ui.themes">
+      <themeElementCategory
+            id="org.gap.themes.vscode"
+            label="VSCode">
+      </themeElementCategory>
    </extension>
 </plugin>

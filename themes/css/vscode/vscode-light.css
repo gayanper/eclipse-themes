@@ -1,0 +1,175 @@
+ColorDefinition#org-eclipse-ui-workbench-ACTIVE_TAB_TEXT_COLOR {
+    color: #101010;
+}
+ColorDefinition#org-eclipse-ui-workbench-INACTIVE_TAB_TEXT_COLOR {
+    color: #101010;
+}
+ColorDefinition#org-eclipse-ui-workbench-ACTIVE_TAB_SELECTED_TEXT_COLOR {
+    color: #101010;
+}
+
+ToolBar {
+	background-color:inherit;	
+}
+
+Shell Tree, Shell Table, Shell List {
+	background-color: #ffffff;
+}
+
+CTabFolder {
+	swt-tab-renderer: url('bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.CTabRendering');
+}
+
+.MPart StyledText {
+	background-color: #ffffff;
+}
+
+.MPartStack#left *,
+.MPartStack.active#left * {
+	background-color: '#org-eclipse-ui-workbench-INACTIVE_TAB_BG_START';
+}
+
+.MPartStack#left,
+.MPartStack.active#left {
+	swt-selected-tab-fill: '#org-eclipse-ui-workbench-INACTIVE_TAB_BG_START';
+	swt-unselected-tabs-color: '#org-eclipse-ui-workbench-INACTIVE_TAB_BG_START';
+	swt-selected-tab-highlight: '#org-eclipse-ui-workbench-INACTIVE_TAB_BG_START';
+	swt-tab-outline:'#org-eclipse-ui-workbench-INACTIVE_TAB_BG_START';
+	swt-selected-tab-highlight:#414241;
+	swt-selected-highlight-top: false;
+	swt-outer-keyline-color: '#org-eclipse-ui-workbench-INACTIVE_TAB_BG_START';
+	swt-unselected-hot-tab-color-background: '#org-eclipse-ui-workbench-INACTIVE_TAB_BG_START';
+}
+
+.MPartStack#right,
+.MPartStack.active#right,
+.MPartStack#bottom,
+.MPartStack.active#bottom,
+.MPartStack.noFocus,
+.MPartStack.noFocus.active,
+.MPartStack,
+.MPartStack.active,
+#org-eclipse-debug-internal-ui-OutlineFolderView.MPartStack,
+#org-eclipse-debug-internal-ui-ToolsFolderView.MPartStack,
+#org-eclipse-debug-internal-ui-NavigatorFolderView.MPartStack {
+    swt-tab-outline: #ffffff;
+    swt-unselected-tabs-color: #ffffff #ffffff 100% 100%; 
+    swt-selected-tab-fill: #ffffff;
+    swt-shadow-visible: false;
+	swt-selected-tab-highlight: #ffffff;
+	swt-tab-outline: #ffffff;
+	swt-selected-tab-highlight:#414241;
+	swt-selected-highlight-top: false;
+	swt-outer-keyline-color: '#org-eclipse-ui-workbench-INACTIVE_TAB_BG_START';
+	swt-unselected-hot-tab-color-background: '#org-eclipse-ui-workbench-INACTIVE_TAB_BG_START';
+}
+
+.MPart SashForm,
+.MPart Section {
+	background-color-titlebar: #ffffff;
+	background-color-gradient-titlebar: #ffffff;
+	background-color: #ffffff;
+}
+
+CTabFolder.EditorStack.MPartStack,
+CTabFolder.EditorStack.MPartStack.active {
+	swt-selected-tab-fill: #ffffff;
+	swt-unselected-tabs-color: #f3f3f3;
+	swt-selected-tab-highlight:#ffffff;
+	swt-tab-outline: #ffffff;
+	swt-selected-highlight: #ffffff;
+	swt-unselected-hot-tab-color-background: #f3f3f3;
+}
+
+CTabFolder.EditorStack.MPartStack,
+CTabFolder.EditorStack.MPartStack Canvas,
+CTabFolder.EditorStack.MPartStack Composite {
+	background-color: #ffffff;
+}
+
+CTabFolder.EditorStack.MPartStack CTabItem,
+CTabFolder.EditorStack.MPartStack CTabItem CLabel {
+    background-color: #f3f3f3;
+}
+
+
+.MPartStack CTabItem,
+.MPartStack CTabItem CLabel {
+    background-color: #ffffff;
+}
+
+CTabFolder.MArea CTabItem, 
+CTabFolder.MArea CTabItem CLabel {
+    background-color: #ffffff;  
+}
+
+#org-eclipse-ui-trim-status.MTrimBar * {
+	background-color: inherit;
+	color: #ffffff;
+}
+
+#org-eclipse-ui-trim-status.MTrimBar {
+	background-color: #0074c2;
+}
+
+#org-eclipse-ui-trim-vertical1.MTrimBar {
+	background-color: #2c2c2c;
+}
+
+IEclipsePreferences#org-eclipse-ui-editors:org-gap-eclipse-themes {
+  preferences:
+    'AbstractTextEditor.Color.Background.SystemDefault=false'
+    'AbstractTextEditor.Color.SelectionBackground.SystemDefault=false'
+    'AbstractTextEditor.Color.SelectionForeground.SystemDefault=false'
+    'AbstractTextEditor.Color.SelectionForeground=0,0,0'
+    'AbstractTextEditor.Color.Background=255,255,255'
+    'AbstractTextEditor.Color.SelectionBackground=179,215,255'
+    'searchResultIndication=true'
+    'searchResultHighlighting=false'
+    'searchResultTextStyle=DASHED_BOX';
+}
+
+IEclipsePreferences#org-eclipse-jdt-ui:org-gap-eclipse-themes {
+  preferences:
+	'java_comment_task_tag=21,139,21'
+	'java_comment_task_tag_bold=false'
+	'java_doc_default=21,139,21'
+	'java_doc_keyword=0,0,255'
+	'java_doc_keyword_bold=false'
+	'java_doc_link=121,94,38'
+	'java_keyword=0,0,255'
+	'java_keyword_bold=false'
+	'java_keyword_return=175,0,219'
+	'java_keyword_return_bold=false'
+	'java_multi_line_comment=21,139,21'
+	'java_operator=9,134,88'
+	'java_single_line_comment=21,139,21'
+	'java_string=163,21,21'
+	'semanticHighlighting.abstractClass.color=38,127,153'
+	'semanticHighlighting.class.color=38,127,153'
+	'semanticHighlighting.class.enabled=true'
+	'semanticHighlighting.enum.color=38,127,153'
+	'semanticHighlighting.enum.enabled=true'
+	'semanticHighlighting.interface.color=38,127,153'
+	'semanticHighlighting.interface.enabled=true'
+	'semanticHighlighting.localVariable.color=0,16,128'
+	'semanticHighlighting.localVariableDeclaration.bold=false'
+	'semanticHighlighting.localVariableDeclaration.color=0,16,128'
+	'semanticHighlighting.localVariableDeclaration.enabled=true'
+	'semanticHighlighting.method.color=121,94,38'
+	'semanticHighlighting.method.enabled=true'
+	'semanticHighlighting.methodDeclarationName.bold=false'
+	'semanticHighlighting.methodDeclarationName.color=121,94,38'
+	'semanticHighlighting.methodDeclarationName.enabled=true'
+	'semanticHighlighting.number.color=9,134,88'
+	'semanticHighlighting.number.enabled=true'
+	'semanticHighlighting.parameterVariable.color=0,16,128'
+	'semanticHighlighting.parameterVariable.enabled=true'
+	'semanticHighlighting.restrictedKeywords.bold=false'
+	'semanticHighlighting.restrictedKeywords.color=175,0,219'
+	'semanticHighlighting.staticFinalField.bold=false'
+	'semanticHighlighting.staticFinalField.italic=false'
+	'semanticHighlighting.staticFinalField.color=0,112,193'
+	'semanticHighlighting.staticMethodInvocation.color=121,94,38';
+}
+

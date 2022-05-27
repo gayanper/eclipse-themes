@@ -1,0 +1,11 @@
+/*@import url("platform:/plugin/org.eclipse.ui.themes/css/e4_system.css");*/
+@import url("platform:/plugin/org.gap.eclipse.themes/css/vscode/vscode-light.css");
+
+FontDefinition#org-eclipse-jface-textfont,
+FontDefinition#org-eclipse-ui-workbench-texteditor-blockSelectionModeFont,
+FontDefinition#org-eclipse-jdt-ui-editors-textfont {
+  font-family: 'Menlo';
+  font-size: 12px;
+}
+
+
