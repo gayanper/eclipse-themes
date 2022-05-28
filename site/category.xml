@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <feature url="features/org.gap.eclipse.themes.feature_2.0.1.qualifier.jar" id="org.gap.eclipse.themes.feature" version="2.0.1.qualifier">
+   <feature url="features/org.gap.eclipse.themes.feature_3.0.0.qualifier.jar" id="org.gap.eclipse.themes.feature" version="3.0.0.qualifier">
       <category name="org.gap.eclipse.themes"/>
    </feature>
    <category-def name="org.gap.eclipse.themes" label="Eclipse Appearence"/>
