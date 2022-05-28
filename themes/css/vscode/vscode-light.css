@@ -18,6 +18,7 @@ Shell Tree, Shell Table, Shell List {
 
 CTabFolder {
 	swt-tab-renderer: url('bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.CTabRendering');
+	font-size: 11px;
 }
 
 .MPart StyledText {
@@ -79,6 +80,49 @@ CTabFolder.EditorStack.MPartStack.active {
 	swt-tab-outline: #ffffff;
 	swt-selected-highlight: #ffffff;
 	swt-unselected-hot-tab-color-background: #f3f3f3;
+	swt-outer-keyline-color: #f3f3f3;
+}
+
+#org-eclipse-e4-ui-compatibility-editor CTabFolder[style~='SWT.DOWN'][style~='SWT.BOTTOM'],
+#org-eclipse-e4-ui-compatibility-editor CTabFolder[style~='SWT.DOWN'][style~='SWT.BOTTOM'] {
+	swt-selected-tab-fill: #ffffff;
+	swt-unselected-tabs-color: #ffffff;
+	swt-selected-tab-highlight:#ffffff;
+	swt-tab-outline: #ffffff;
+	swt-selected-highlight: #ffffff;
+	swt-unselected-hot-tab-color-background: #ffffff;
+	swt-outer-keyline-color: #ffffff;
+	swt-selected-tab-highlight:#414241;
+	background-color: #ffffff;
+}
+
+.MPart.View CTabFolder[style~='SWT.TOP'] {
+	swt-selected-tab-fill: #ffffff;
+	swt-unselected-tabs-color: #ffffff;
+	swt-selected-tab-highlight:#ffffff;
+	swt-tab-outline: #ffffff;
+	swt-selected-highlight: #ffffff;
+	swt-unselected-hot-tab-color-background: #ffffff;
+	swt-outer-keyline-color: #ffffff;
+	swt-selected-tab-highlight:#414241;
+	background-color: #ffffff;
+	swt-selected-highlight-top: false;
+}
+
+
+#org-eclipse-e4-ui-compatibility-editor CTabItem CLabel, 
+#org-eclipse-e4-ui-compatibility-editor CTabItem {
+    background-color: inherit;
+}
+
+#org-eclipse-e4-ui-compatibility-editor Form,
+#org-eclipse-e4-ui-compatibility-editor Form CLabel,
+#org-eclipse-e4-ui-compatibility-editor Form Section  {
+	background-color: #ffffff;
+	text-background-color: #ffffff;
+	border-color-titlebar: #ffffff;
+	h-bottom-keyline-1-color: #ffffff;
+	h-bottom-keyline-2-color: #f3f3f3;
 }
 
 CTabFolder.EditorStack.MPartStack,
@@ -106,6 +150,7 @@ CTabFolder.MArea CTabItem CLabel {
 #org-eclipse-ui-trim-status.MTrimBar * {
 	background-color: inherit;
 	color: #ffffff;
+	font-size: 11px;
 }
 
 #org-eclipse-ui-trim-status.MTrimBar {
@@ -114,6 +159,10 @@ CTabFolder.MArea CTabItem CLabel {
 
 #org-eclipse-ui-trim-vertical1.MTrimBar {
 	background-color: #2c2c2c;
+}
+
+#org-eclipse-tm-terminal-view-ui-TerminalsView CTabFolder {
+	font-size: 10px;
 }
 
 IEclipsePreferences#org-eclipse-ui-editors:org-gap-eclipse-themes {
