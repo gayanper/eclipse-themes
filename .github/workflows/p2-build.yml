@@ -1,0 +1,49 @@
+name: Build and P2 Deploy
+
+on:
+  # Triggers the workflow on push or pull request events but only for the master branch
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up JDK
+        uses: actions/setup-java@v1
+        with:
+          java-version: 11
+      - name: Setup Maven
+        uses: stCarolas/setup-maven@v4.3
+        with:
+          maven-version: 3.6.3
+          
+      - name: Configure Git
+        run: |
+          git config --global user.email "workflows@egithub.com"
+          git config --global user.name "workflows@egithub.com"
+
+      - name: Build
+        id: build
+        run: ./mvnw install -DskipTests
+      
+      - name: Deploy p2 site
+        if: ${{ github.ref == 'refs/heads/main' && steps.build.outcome == 'success' }}
+        run: |
+          mkdir -p ./p2/
+          cp -r ./jdt-patch-feature/target/site ./p2/i-builds
+          git add -f ./p2/i-builds/*
+          git stash
+          git fetch --all
+          git checkout --track origin/gh-pages
+          git rm -rf --ignore-unmatch ./p2/i-builds/*
+          git clean -df
+          git stash pop
+          git add -f ./p2/i-builds/*
+          git commit -m "Deploy artifacts to p2 update site"
+          git push origin gh-pages
+          git switch main
