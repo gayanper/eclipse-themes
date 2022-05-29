@@ -7,6 +7,10 @@ on:
   pull_request:
     branches: [ main ]
 
+  workflow_dispatch:
+    inputs:
+      trigger_build:
+
 jobs:
   # This workflow contains a single job called "build"
   build:
