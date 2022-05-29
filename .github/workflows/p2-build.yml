@@ -33,7 +33,7 @@ jobs:
 
       - name: Build
         id: build
-        run: ./mvnw install -DskipTests
+        run: mvn install -DskipTests
       
       - name: Deploy p2 site
         if: ${{ github.ref == 'refs/heads/main' && steps.build.outcome == 'success' }}
