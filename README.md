@@ -1,5 +1,16 @@
-# eclipse-themes ![build status](https://travis-ci.org/gayanper/eclipse-themes.svg?branch=master)
-Eclipse themes and some plugins to enhance the developer experience.
+## GAP Eclipse Themes ![build status](https://github.com/gayanper/eclipse-themes/actions/workflows/p2-build.yml/badge.svg)
+Eclipse themes and some features to enhance the look and feel of Eclipse Java IDE
 
-# License
-Eclise-Themes is distributed under the [EPL](http://www.eclipse.org/legal/epl-v10.html) license.
+Currently this plug-in provides following themes
+
+-	VSCode Light
+![](./docs/vscode-light.png)
+
+
+## Installation
+
+### Nightly Builds
+[Update Site (https://gayanper.github.io/eclipse-themes/p2/i-builds)](https://gayanper.github.io/eclipse-themes/p2/i-builds)
+
+## License
+gap-eclipse-themes is distributed under the [EPL](http://www.eclipse.org/legal/epl-v10.html) license.
