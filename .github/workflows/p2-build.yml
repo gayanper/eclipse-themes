@@ -39,7 +39,7 @@ jobs:
         if: ${{ github.ref == 'refs/heads/main' && steps.build.outcome == 'success' }}
         run: |
           mkdir -p ./p2/
-          cp -r ./jdt-patch-feature/target/site ./p2/i-builds
+          cp -r ./site/target/repository ./p2/i-builds
           git add -f ./p2/i-builds/*
           git stash
           git fetch --all
