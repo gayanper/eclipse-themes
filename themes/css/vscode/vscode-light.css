@@ -172,6 +172,11 @@ CTabFolder.MArea CTabItem CLabel {
     font: '#org-gap-eclipse-themes-VIEW_TITLE_FONT_SMALL';
 }
 
+IEclipsePreferences#org-eclipse-ui-workbench:org-gap-eclipse-themes {
+  preferences:
+    'ERROR_COLOR=199,46,15'
+}
+
 IEclipsePreferences#org-eclipse-ui-editors:org-gap-eclipse-themes {
   preferences:
     'AbstractTextEditor.Color.Background.SystemDefault=false'
