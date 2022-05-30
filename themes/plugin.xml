@@ -17,16 +17,6 @@
       </theme>
    </extension>
    <extension
-         point="org.eclipse.e4.ui.css.core.propertyHandler">
-      <handler
-            adapter="org.eclipse.e4.ui.css.swt.dom.CTabFolderElement"
-            handler="org.gap.eclipse.themes.e4.renders.swt.CssPropertySelectedTabHighlightThickness">
-         <property-name
-               name="swt-selected-tab-highlight-thickness">
-         </property-name>
-      </handler>
-   </extension>
-   <extension
          point="org.eclipse.ui.themes">
       <themeElementCategory
             id="org.gap.themes.vscode"
