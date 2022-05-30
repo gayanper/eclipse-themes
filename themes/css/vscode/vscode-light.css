@@ -186,6 +186,7 @@ IEclipsePreferences#org-eclipse-ui-workbench:org-gap-eclipse-themes {
   preferences:
     'ERROR_COLOR=199,46,15'
     'org.eclipse.debug.ui.consoleFont=#org-gap-eclipse-themes-CONSOLE_FONT'
+    'org.eclipse.compare.contentmergeviewer.TextMergeViewer=#org-gap-eclipse-themes-SOUREC_EDITOR_FONT'
 }
 
 IEclipsePreferences#org-eclipse-ui-editors:org-gap-eclipse-themes {
