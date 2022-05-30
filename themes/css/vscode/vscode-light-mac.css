@@ -1,8 +1,11 @@
 @import url("platform:/plugin/org.gap.eclipse.themes/css/vscode/vscode-light.css");
 
-FontDefinition#org-eclipse-jface-textfont,
-FontDefinition#org-eclipse-ui-workbench-texteditor-blockSelectionModeFont,
-FontDefinition#org-eclipse-jdt-ui-editors-textfont {
+FontDefinition#org-gap-eclipse-themes-SOUREC_EDITOR_FONT {
+  font-family: 'Menlo';
+  font-size: 12px;
+}
+
+FontDefinition#org-gap-eclipse-themes-CONSOLE_FONT {
   font-family: 'Menlo';
   font-size: 12px;
 }
@@ -18,4 +21,3 @@ FontDefinition#org-gap-eclipse-themes-VIEW_TITLE_FONT_SMALL {
 FontDefinition#org-gap-eclipse-themes-STATUS_FONT {
   font-size: 11px;
 }
-

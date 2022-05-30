@@ -2,7 +2,10 @@ ThemesExtension {
     font-definition:
         '#org-gap-eclipse-themes-VIEW_TITLE_FONT_SMALL',
         '#org-gap-eclipse-themes-VIEW_TITLE_FONT_NORMAL',
-        '#org-gap-eclipse-themes-STATUS_FONT';
+        '#org-gap-eclipse-themes-STATUS_FONT',
+        '#org-gap-eclipse-themes-SOUREC_EDITOR_FONT',
+        '#org-gap-eclipse-themes-CONSOLE_FONT';
+;
 }
 
 ColorDefinition#org-eclipse-ui-workbench-ACTIVE_TAB_TEXT_COLOR {
@@ -13,6 +16,13 @@ ColorDefinition#org-eclipse-ui-workbench-INACTIVE_TAB_TEXT_COLOR {
 }
 ColorDefinition#org-eclipse-ui-workbench-ACTIVE_TAB_SELECTED_TEXT_COLOR {
     color: #101010;
+}
+
+FontDefinition#org-eclipse-jface-textfont,
+FontDefinition#org-eclipse-ui-workbench-texteditor-blockSelectionModeFont,
+FontDefinition#org-eclipse-jdt-ui-editors-textfont,
+FontDefinition#org-eclipse-egit-ui-CommitMessageEditorFont {
+    font: '#org-gap-eclipse-themes-SOUREC_EDITOR_FONT';
 }
 
 ToolBar {
@@ -175,6 +185,7 @@ CTabFolder.MArea CTabItem CLabel {
 IEclipsePreferences#org-eclipse-ui-workbench:org-gap-eclipse-themes {
   preferences:
     'ERROR_COLOR=199,46,15'
+    'org.eclipse.debug.ui.consoleFont=#org-gap-eclipse-themes-CONSOLE_FONT'
 }
 
 IEclipsePreferences#org-eclipse-ui-editors:org-gap-eclipse-themes {
