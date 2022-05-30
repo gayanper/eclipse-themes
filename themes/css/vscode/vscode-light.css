@@ -1,3 +1,10 @@
+ThemesExtension { 
+    font-definition:
+        '#org-gap-eclipse-themes-VIEW_TITLE_FONT_SMALL',
+        '#org-gap-eclipse-themes-VIEW_TITLE_FONT_NORMAL',
+        '#org-gap-eclipse-themes-STATUS_FONT';
+}
+
 ColorDefinition#org-eclipse-ui-workbench-ACTIVE_TAB_TEXT_COLOR {
     color: #101010;
 }
@@ -9,7 +16,7 @@ ColorDefinition#org-eclipse-ui-workbench-ACTIVE_TAB_SELECTED_TEXT_COLOR {
 }
 
 ToolBar {
-	background-color:inherit;	
+    background-color:inherit;	
 }
 
 Shell Tree, Shell Table, Shell List {
@@ -17,8 +24,8 @@ Shell Tree, Shell Table, Shell List {
 }
 
 CTabFolder {
-	swt-tab-renderer: url('bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.CTabRendering');
-	font-size: 11px;
+    swt-tab-renderer: url('bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.CTabRendering');
+    font-family: '#org-gap-eclipse-themes-VIEW_TITLE_FONT_NORMAL';
 }
 
 .MPart StyledText {
@@ -150,7 +157,7 @@ CTabFolder.MArea CTabItem CLabel {
 #org-eclipse-ui-trim-status.MTrimBar * {
 	background-color: inherit;
 	color: #ffffff;
-	font-size: 11px;
+	font: '#org-gap-eclipse-themes-STATUS_FONT';
 }
 
 #org-eclipse-ui-trim-status.MTrimBar {
@@ -162,7 +169,7 @@ CTabFolder.MArea CTabItem CLabel {
 }
 
 #org-eclipse-tm-terminal-view-ui-TerminalsView CTabFolder {
-	font-size: 10px;
+	font: '#org-gap-eclipse-themes-VIEW_TITLE_FONT_SMALL';
 }
 
 IEclipsePreferences#org-eclipse-ui-editors:org-gap-eclipse-themes {
