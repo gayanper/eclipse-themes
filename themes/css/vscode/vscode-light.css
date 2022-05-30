@@ -122,9 +122,9 @@ CTabFolder.EditorStack.MPartStack.active {
     background-color: inherit;
 }
 
-#org-eclipse-e4-ui-compatibility-editor Form,
-#org-eclipse-e4-ui-compatibility-editor Form CLabel,
-#org-eclipse-e4-ui-compatibility-editor Form Section  {
+.MPartStack Form,
+.MPartStack Form CLabel,
+.MPartStack Form Section  {
     background-color: #ffffff;
     text-background-color: #ffffff;
     border-color-titlebar: #ffffff;
