@@ -187,6 +187,7 @@ IEclipsePreferences#org-eclipse-ui-editors:org-gap-eclipse-themes {
 
 IEclipsePreferences#org-eclipse-jdt-ui:org-gap-eclipse-themes {
   preferences:
+    'java_default=38,127,153'
     'java_comment_task_tag=21,139,21'
     'java_comment_task_tag_bold=false'
     'java_doc_default=21,139,21'
