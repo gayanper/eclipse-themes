@@ -1,0 +1,6 @@
+CTabFolder.MPartStack,
+.MPartStack CTabFolder[style~='SWT.DOWN'][style~='SWT.BOTTOM'] {
+    swt-tab-renderer: url('bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.CTabRendering');
+    font-family: '#org-gap-eclipse-themes-VIEW_TITLE_FONT_NORMAL';
+    swt-tab-height: 24px;
+}

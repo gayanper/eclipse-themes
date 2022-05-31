@@ -15,6 +15,18 @@
             label="VSCode Light"
             os="win32">
       </theme>
+      <theme
+            basestylesheeturi="css/vscode/pre-24/vscode-light-mac.css"
+            id="org.gap.themes.vscode.light.pre"
+            label="VSCode Light (Pre 2022-06)"
+            os="macosx">
+      </theme>
+      <theme
+            basestylesheeturi="css/vscode/pre-24/vscode-light-win.css"
+            id="org.gap.themes.vscode.light.pre"
+            label="VSCode Light (Pre 2022-06)"
+            os="win32">
+      </theme>
    </extension>
    <extension
          point="org.eclipse.ui.themes">

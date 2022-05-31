@@ -38,11 +38,6 @@ Shell Tree, Shell Table, Shell List {
     background-color: #ffffff;
 }
 
-CTabFolder {
-    swt-tab-renderer: url('bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.CTabRendering');
-    font-family: '#org-gap-eclipse-themes-VIEW_TITLE_FONT_NORMAL';
-}
-
 .MPart StyledText {
     background-color: #ffffff;
 }
