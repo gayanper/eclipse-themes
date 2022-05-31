@@ -21,8 +21,13 @@ ColorDefinition#org-eclipse-ui-workbench-ACTIVE_TAB_SELECTED_TEXT_COLOR {
 FontDefinition#org-eclipse-jface-textfont,
 FontDefinition#org-eclipse-ui-workbench-texteditor-blockSelectionModeFont,
 FontDefinition#org-eclipse-jdt-ui-editors-textfont,
-FontDefinition#org-eclipse-egit-ui-CommitMessageEditorFont {
+FontDefinition#org-eclipse-egit-ui-CommitMessageEditorFont,
+FontDefinition#org-eclipse-compare-contentmergeviewer-TextMergeViewer {
     font: '#org-gap-eclipse-themes-SOUREC_EDITOR_FONT';
+}
+
+FontDefinition#org-eclipse-debug-ui-consoleFont {
+    font: '#org-gap-eclipse-themes-CONSOLE_FONT';
 }
 
 ToolBar {
@@ -185,8 +190,6 @@ CTabFolder.MArea CTabItem CLabel {
 IEclipsePreferences#org-eclipse-ui-workbench:org-gap-eclipse-themes {
   preferences:
     'ERROR_COLOR=199,46,15'
-    'org.eclipse.debug.ui.consoleFont=#org-gap-eclipse-themes-CONSOLE_FONT'
-    'org.eclipse.compare.contentmergeviewer.TextMergeViewer=#org-gap-eclipse-themes-SOUREC_EDITOR_FONT'
 }
 
 IEclipsePreferences#org-eclipse-ui-editors:org-gap-eclipse-themes {
