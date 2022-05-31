@@ -3,9 +3,13 @@ Eclipse themes and some features to enhance the look and feel of Eclipse Java ID
 
 Currently this plug-in provides following themes
 
--	VSCode Light
+-   VSCode Light
 ![](./docs/vscode-light.png)
 
+-   VSCode Light (Pre 2022-06)
+[**This theme must be used if you are not running Eclipse 2022-06 Milestones**]
+
+![](./docs/vscode-light.png)
 
 ## Installation
 
