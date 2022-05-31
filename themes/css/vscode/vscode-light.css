@@ -108,7 +108,7 @@ CTabFolder.EditorStack.MPartStack.active {
     swt-tab-outline: #ffffff;
     swt-selected-highlight: #ffffff;
     swt-unselected-hot-tab-color-background: #ffffff;
-    swt-outer-keyline-color: #ffffff;
+    swt-outer-keyline-color: #fffffe; /* hack to remove the diagonal line when tabs run out of space */
     swt-selected-tab-highlight:#414241;
     background-color: #ffffff;
 }
