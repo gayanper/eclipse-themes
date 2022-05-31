@@ -38,6 +38,10 @@ Shell Tree, Shell Table, Shell List {
     background-color: #ffffff;
 }
 
+Shell[style~='SWT.ON_TOP'] Composite {
+    background-color: inherit;
+}
+
 .MPart StyledText {
     background-color: #ffffff;
 }
@@ -185,6 +189,7 @@ CTabFolder.MArea CTabItem CLabel {
 IEclipsePreferences#org-eclipse-ui-workbench:org-gap-eclipse-themes {
   preferences:
     'ERROR_COLOR=199,46,15'
+    'org.eclipse.ui.workbench.INFORMATION_BACKGROUND=243,243,243'
 }
 
 IEclipsePreferences#org-eclipse-ui-editors:org-gap-eclipse-themes {
