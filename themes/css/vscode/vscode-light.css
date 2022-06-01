@@ -5,7 +5,8 @@ ThemesExtension {
         '#org-gap-eclipse-themes-STATUS_FONT',
         '#org-gap-eclipse-themes-SOUREC_EDITOR_FONT',
         '#org-gap-eclipse-themes-CONSOLE_FONT';
-;
+    color-definition:
+        '#org-gap-eclipse-themes-PRIMARY_VIEW_BG_COLOR';
 }
 
 ColorDefinition#org-eclipse-ui-workbench-ACTIVE_TAB_TEXT_COLOR {
@@ -16,6 +17,9 @@ ColorDefinition#org-eclipse-ui-workbench-INACTIVE_TAB_TEXT_COLOR {
 }
 ColorDefinition#org-eclipse-ui-workbench-ACTIVE_TAB_SELECTED_TEXT_COLOR {
     color: #101010;
+}
+ColorDefinition#org-gap-eclipse-themes-PRIMARY_VIEW_BG_COLOR {
+    color: #f3f3f3;
 }
 
 FontDefinition#org-eclipse-jface-textfont,
@@ -42,25 +46,30 @@ Shell[style~='SWT.ON_TOP'] Composite {
     background-color: inherit;
 }
 
+.MPartSashContainer,
+.MTrimmedWindow {
+    background-color: '#org-gap-eclipse-themes-PRIMARY_VIEW_BG_COLOR';
+}
+
 .MPart StyledText {
     background-color: #ffffff;
 }
 
 .MPartStack#left *,
 .MPartStack.active#left * {
-    background-color: '#org-eclipse-ui-workbench-INACTIVE_TAB_BG_START';
+    background-color: '#org-gap-eclipse-themes-PRIMARY_VIEW_BG_COLOR';
 }
 
 .MPartStack#left,
 .MPartStack.active#left {
-    swt-selected-tab-fill: '#org-eclipse-ui-workbench-INACTIVE_TAB_BG_START';
-    swt-unselected-tabs-color: '#org-eclipse-ui-workbench-INACTIVE_TAB_BG_START';
-    swt-selected-tab-highlight: '#org-eclipse-ui-workbench-INACTIVE_TAB_BG_START';
-    swt-tab-outline:'#org-eclipse-ui-workbench-INACTIVE_TAB_BG_START';
+    swt-selected-tab-fill: '#org-gap-eclipse-themes-PRIMARY_VIEW_BG_COLOR';
+    swt-unselected-tabs-color: '#org-gap-eclipse-themes-PRIMARY_VIEW_BG_COLOR';
+    swt-selected-tab-highlight: '#org-gap-eclipse-themes-PRIMARY_VIEW_BG_COLOR';
+    swt-tab-outline:'#org-gap-eclipse-themes-PRIMARY_VIEW_BG_COLOR';
     swt-selected-tab-highlight:#414241;
     swt-selected-highlight-top: false;
-    swt-outer-keyline-color: '#org-eclipse-ui-workbench-INACTIVE_TAB_BG_START';
-    swt-unselected-hot-tab-color-background: '#org-eclipse-ui-workbench-INACTIVE_TAB_BG_START';
+    swt-outer-keyline-color: '#org-gap-eclipse-themes-PRIMARY_VIEW_BG_COLOR';
+    swt-unselected-hot-tab-color-background: '#org-gap-eclipse-themes-PRIMARY_VIEW_BG_COLOR';
 }
 
 .MPartStack#right,
@@ -82,8 +91,8 @@ Shell[style~='SWT.ON_TOP'] Composite {
     swt-tab-outline: #ffffff;
     swt-selected-tab-highlight:#414241;
     swt-selected-highlight-top: false;
-    swt-outer-keyline-color: '#org-eclipse-ui-workbench-INACTIVE_TAB_BG_START';
-    swt-unselected-hot-tab-color-background: '#org-eclipse-ui-workbench-INACTIVE_TAB_BG_START';
+    swt-outer-keyline-color: '#org-gap-eclipse-themes-PRIMARY_VIEW_BG_COLOR';
+    swt-unselected-hot-tab-color-background: '#org-gap-eclipse-themes-PRIMARY_VIEW_BG_COLOR';
 }
 
 .MPart SashForm,
