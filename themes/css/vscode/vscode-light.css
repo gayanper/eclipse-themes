@@ -56,12 +56,14 @@ Shell[style~='SWT.ON_TOP'] Composite {
 }
 
 .MPartStack#left *,
-.MPartStack.active#left * {
+.MPartStack.active#left *,
+#org-eclipse-debug-internal-ui-NavigatorFolderView.MPartStack * {
     background-color: '#org-gap-eclipse-themes-PRIMARY_VIEW_BG_COLOR';
 }
 
 .MPartStack#left,
-.MPartStack.active#left {
+.MPartStack.active#left,
+#org-eclipse-debug-internal-ui-NavigatorFolderView.MPartStack {
     swt-selected-tab-fill: '#org-gap-eclipse-themes-PRIMARY_VIEW_BG_COLOR';
     swt-unselected-tabs-color: '#org-gap-eclipse-themes-PRIMARY_VIEW_BG_COLOR';
     swt-selected-tab-highlight: '#org-gap-eclipse-themes-PRIMARY_VIEW_BG_COLOR';
@@ -81,8 +83,7 @@ Shell[style~='SWT.ON_TOP'] Composite {
 .MPartStack,
 .MPartStack.active,
 #org-eclipse-debug-internal-ui-OutlineFolderView.MPartStack,
-#org-eclipse-debug-internal-ui-ToolsFolderView.MPartStack,
-#org-eclipse-debug-internal-ui-NavigatorFolderView.MPartStack {
+#org-eclipse-debug-internal-ui-ToolsFolderView.MPartStack {
     swt-tab-outline: #ffffff;
     swt-unselected-tabs-color: #ffffff #ffffff 100% 100%; 
     swt-selected-tab-fill: #ffffff;
