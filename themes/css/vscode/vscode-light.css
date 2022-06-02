@@ -42,6 +42,8 @@ Shell Tree, Shell Table, Shell List {
     background-color: #ffffff;
 }
 
+Shell[style~='SWT.ON_TOP'] Text,
+Shell[style~='SWT.ON_TOP'] Table,
 Shell[style~='SWT.ON_TOP'] Composite {
     background-color: inherit;
 }
@@ -257,6 +259,7 @@ IEclipsePreferences#org-eclipse-jdt-ui:org-gap-eclipse-themes {
     'semanticHighlighting.staticFinalField.bold=false'
     'semanticHighlighting.staticFinalField.italic=false'
     'semanticHighlighting.staticFinalField.color=0,112,193'
-    'semanticHighlighting.staticMethodInvocation.color=121,94,38';
+    'semanticHighlighting.staticMethodInvocation.color=121,94,38'
+    'org.eclipse.jdt.ui.Javadoc.backgroundColor=243,243,243';
 }
 
