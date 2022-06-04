@@ -90,7 +90,6 @@ Shell[style~='SWT.ON_TOP'] Composite {
 /* disable maximizability for both left and right stacks. */
 .MPartStack#right,
 #org-eclipse-debug-internal-ui-OutlineFolderView.MPartStack,
-#org-eclipse-debug-internal-ui-ToolsFolderView.MPartStack,
 .MPartStack#left,
 #org-eclipse-debug-internal-ui-NavigatorFolderView.MPartStack {
     swt-maximize-visible: false;
