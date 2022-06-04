@@ -55,7 +55,7 @@ Shell[style~='SWT.ON_TOP'] Table,
 Shell[style~='SWT.ON_TOP'] StyledText,
 Shell[style~='SWT.ON_TOP'] Label,
 Shell[style~='SWT.ON_TOP'] Composite,
-Shell[style~='SWT.RESIZE'] Tree { /* AbstractInformationControl */
+Shell[style~='SWT.RESIZE'][title=''] Tree { /* AbstractInformationControl, may be the resize style might not needed */
     background-color: inherit;
 }
 
