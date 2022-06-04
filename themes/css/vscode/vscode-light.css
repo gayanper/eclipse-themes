@@ -54,7 +54,8 @@ Shell[style~='SWT.ON_TOP'] Text,
 Shell[style~='SWT.ON_TOP'] Table,
 Shell[style~='SWT.ON_TOP'] StyledText,
 Shell[style~='SWT.ON_TOP'] Label,
-Shell[style~='SWT.ON_TOP'] Composite {
+Shell[style~='SWT.ON_TOP'] Composite,
+Shell[style~='SWT.RESIZE'] Tree { /* AbstractInformationControl */
     background-color: inherit;
 }
 
