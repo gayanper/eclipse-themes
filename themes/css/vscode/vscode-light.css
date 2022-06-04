@@ -59,6 +59,10 @@ Shell[style~='SWT.RESIZE'][title=''] Tree { /* AbstractInformationControl, may b
     background-color: inherit;
 }
 
+Shell[style~='SWT.ON_TOP'] StyledText { /* Inspect popup value font */ 
+    font: '#org-gap-eclipse-themes-SOUREC_EDITOR_FONT';
+}
+
 .MPartSashContainer,
 .MTrimmedWindow {
     background-color: '#org-gap-eclipse-themes-PRIMARY_VIEW_BG_COLOR';
