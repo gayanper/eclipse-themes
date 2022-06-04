@@ -6,6 +6,7 @@ ThemesExtension {
         '#org-gap-eclipse-themes-SOUREC_EDITOR_FONT',
         '#org-gap-eclipse-themes-CONSOLE_FONT';
     color-definition:
+        '#org-gap-eclipse-themes-POPUP_BG_COLOR',
         '#org-gap-eclipse-themes-PRIMARY_VIEW_BG_COLOR';
 }
 
@@ -20,6 +21,9 @@ ColorDefinition#org-eclipse-ui-workbench-ACTIVE_TAB_SELECTED_TEXT_COLOR {
 }
 ColorDefinition#org-gap-eclipse-themes-PRIMARY_VIEW_BG_COLOR {
     color: #f3f3f3;
+}
+ColorDefinition#org-gap-eclipse-themes-POPUP_BG_COLOR {
+    color: rgb(243, 243, 243);
 }
 
 FontDefinition#org-eclipse-jface-textfont,
@@ -38,12 +42,18 @@ ToolBar {
     background-color:inherit;	
 }
 
+Shell[style~='SWT.ON_TOP'][style~='SWT.DROP_DOWN'] {
+    background-color: '#org-gap-eclipse-themes-POPUP_BG_COLOR';
+}
+
 Shell Tree, Shell Table, Shell List {
     background-color: #ffffff;
 }
 
 Shell[style~='SWT.ON_TOP'] Text,
 Shell[style~='SWT.ON_TOP'] Table,
+Shell[style~='SWT.ON_TOP'] StyledText,
+Shell[style~='SWT.ON_TOP'] Label,
 Shell[style~='SWT.ON_TOP'] Composite {
     background-color: inherit;
 }
@@ -212,6 +222,7 @@ IEclipsePreferences#org-eclipse-ui-workbench:org-gap-eclipse-themes {
   preferences:
     'ERROR_COLOR=199,46,15'
     'org.eclipse.ui.workbench.INFORMATION_BACKGROUND=243,243,243'
+    'CONTENT_ASSIST_BACKGROUND_COLOR=243,243,243'
 }
 
 IEclipsePreferences#org-eclipse-ui-editors:org-gap-eclipse-themes {
