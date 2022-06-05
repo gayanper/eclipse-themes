@@ -47,10 +47,6 @@ Shell[style~='SWT.ON_TOP'][style~='SWT.NO_TRIM'] { /* parameter info popup */
     background-color: '#org-gap-eclipse-themes-POPUP_BG_COLOR';
 }
 
-Shell Tree, Shell Table, Shell List {
-    background-color: #ffffff;
-}
-
 Shell[style~='SWT.ON_TOP'][title=''] Text,
 Shell[style~='SWT.ON_TOP'][title=''] Table,
 Shell[style~='SWT.ON_TOP'][title=''] StyledText,
@@ -63,6 +59,14 @@ Shell[style~='SWT.RESIZE'][title=''] Tree { /* AbstractInformationControl, may b
 Shell[style~='SWT.ON_TOP'] StyledText { /* Inspect popup value font */ 
     font: '#org-gap-eclipse-themes-SOUREC_EDITOR_FONT';
 }
+
+Shell Tree, Shell Table, Shell List,
+Shell[style~='SWT.DIALOG_TRIM'][style~='SWT.APPLICATION_MODAL'] Tree,
+Shell[style~='SWT.DIALOG_TRIM'][style~='SWT.APPLICATION_MODAL'] List,
+Shell[style~='SWT.DIALOG_TRIM'][style~='SWT.APPLICATION_MODAL'] Table {
+    background-color: #ffffff;
+}
+
 
 .MPartSashContainer,
 .MTrimmedWindow {
