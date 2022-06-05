@@ -42,7 +42,8 @@ ToolBar {
     background-color:inherit;	
 }
 
-Shell[style~='SWT.ON_TOP'][style~='SWT.DROP_DOWN'] {
+Shell[style~='SWT.ON_TOP'][style~='SWT.DROP_DOWN'],
+Shell[style~='SWT.ON_TOP'][style~='SWT.NO_TRIM'] { /* parameter info popup */
     background-color: '#org-gap-eclipse-themes-POPUP_BG_COLOR';
 }
 
