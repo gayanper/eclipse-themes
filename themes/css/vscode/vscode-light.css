@@ -61,9 +61,11 @@ Shell[style~='SWT.ON_TOP'] StyledText { /* Inspect popup value font */
 }
 
 Shell Tree, Shell Table, Shell List,
-Shell[style~='SWT.DIALOG_TRIM'][style~='SWT.APPLICATION_MODAL'] Tree,
+Shell[style~='SWT.DIALOG_TRIM'][style~='SWT.APPLICATION_MODAL'] Tree, /* all modal dialogs like Install wizard */
 Shell[style~='SWT.DIALOG_TRIM'][style~='SWT.APPLICATION_MODAL'] List,
-Shell[style~='SWT.DIALOG_TRIM'][style~='SWT.APPLICATION_MODAL'] Table {
+Shell[style~='SWT.DIALOG_TRIM'][style~='SWT.APPLICATION_MODAL'] Table,
+Shell[style~='SWT.DIALOG_TRIM'][style~='SWT.BORDER'] Tree /* all non-modal dialogs such as Egit Push */
+{ 
     background-color: #ffffff;
 }
 
