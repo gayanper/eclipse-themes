@@ -160,7 +160,7 @@ CTabFolder.EditorStack.MPartStack.active {
     background-color: #ffffff;
 }
 
-.MPart.View CTabFolder[style~='SWT.TOP'] {
+.MPart.View CTabFolder[style~='SWT.TOP'] { /* TM Terminal tabs or similar */
     swt-selected-tab-fill: #ffffff;
     swt-unselected-tabs-color: #ffffff;
     swt-selected-tab-highlight:#ffffff;
@@ -168,7 +168,7 @@ CTabFolder.EditorStack.MPartStack.active {
     swt-selected-highlight: #ffffff;
     swt-unselected-hot-tab-color-background: #ffffff;
     swt-outer-keyline-color: #ffffff;
-    swt-selected-tab-highlight:#414241;
+    swt-selected-tab-highlight: #CBCCC9;
     background-color: #ffffff;
     swt-selected-highlight-top: false;
 }
