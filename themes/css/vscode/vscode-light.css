@@ -51,11 +51,11 @@ Shell Tree, Shell Table, Shell List {
     background-color: #ffffff;
 }
 
-Shell[style~='SWT.ON_TOP'] Text,
-Shell[style~='SWT.ON_TOP'] Table,
-Shell[style~='SWT.ON_TOP'] StyledText,
-Shell[style~='SWT.ON_TOP'] Label,
-Shell[style~='SWT.ON_TOP'] Composite,
+Shell[style~='SWT.ON_TOP'][title=''] Text,
+Shell[style~='SWT.ON_TOP'][title=''] Table,
+Shell[style~='SWT.ON_TOP'][title=''] StyledText,
+Shell[style~='SWT.ON_TOP'][title=''] Label,
+Shell[style~='SWT.ON_TOP'][title=''] Composite,
 Shell[style~='SWT.RESIZE'][title=''] Tree { /* AbstractInformationControl, may be the resize style might not needed */
     background-color: inherit;
 }
