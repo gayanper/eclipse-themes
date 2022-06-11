@@ -28,11 +28,4 @@
             os="win32">
       </theme>
    </extension>
-   <extension
-         point="org.eclipse.ui.themes">
-      <themeElementCategory
-            id="org.gap.themes.vscode"
-            label="VSCode">
-      </themeElementCategory>
-   </extension>
 </plugin>

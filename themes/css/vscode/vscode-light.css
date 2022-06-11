@@ -69,6 +69,9 @@ Shell[style~='SWT.DIALOG_TRIM'][style~='SWT.BORDER'] Tree /* all non-modal dialo
     background-color: #ffffff;
 }
 
+CTabFolder {
+    border-visible: false;
+}
 
 .MPartSashContainer,
 .MTrimmedWindow {
@@ -79,6 +82,7 @@ Shell[style~='SWT.DIALOG_TRIM'][style~='SWT.BORDER'] Tree /* all non-modal dialo
     background-color: #ffffff;
 }
 
+/* left side tab stack */
 .MPartStack#left *,
 .MPartStack.active#left *,
 #org-eclipse-debug-internal-ui-NavigatorFolderView.MPartStack * {
@@ -98,15 +102,9 @@ Shell[style~='SWT.DIALOG_TRIM'][style~='SWT.BORDER'] Tree /* all non-modal dialo
     swt-unselected-hot-tab-color-background: '#org-gap-eclipse-themes-PRIMARY_VIEW_BG_COLOR';
     swt-maximize-visible: false;
 }
+/* --------------------------------------- */
 
-/* disable maximizability for both left and right stacks. */
-.MPartStack#right,
-#org-eclipse-debug-internal-ui-OutlineFolderView.MPartStack,
-.MPartStack#left,
-#org-eclipse-debug-internal-ui-NavigatorFolderView.MPartStack {
-    swt-maximize-visible: false;
-}
-
+/* right side and bottom tab stack. */
 .MPartStack#right,
 .MPartStack.active#right,
 .MPartStack#bottom,
@@ -128,16 +126,21 @@ Shell[style~='SWT.DIALOG_TRIM'][style~='SWT.BORDER'] Tree /* all non-modal dialo
     swt-outer-keyline-color: '#org-gap-eclipse-themes-PRIMARY_VIEW_BG_COLOR';
     swt-unselected-hot-tab-color-background: '#org-gap-eclipse-themes-PRIMARY_VIEW_BG_COLOR';
 }
+/* --------------------------------------- */
 
-.MPart SashForm,
-.MPart Section {
-    background-color-titlebar: #ffffff;
-    background-color-gradient-titlebar: #ffffff;
-    background-color: #ffffff;
+/* disable maximizability for both left and right stacks. */
+.MPartStack#right,
+#org-eclipse-debug-internal-ui-OutlineFolderView.MPartStack,
+.MPartStack#left,
+#org-eclipse-debug-internal-ui-NavigatorFolderView.MPartStack {
+    swt-maximize-visible: false;
 }
+/* --------------------------------------- */
 
-CTabFolder.EditorStack.MPartStack,
-CTabFolder.EditorStack.MPartStack.active {
+
+/* editor stack */
+#org-eclipse-ui-editorss CTabFolder,
+#org-eclipse-ui-editorss CTabFolder.active {
     swt-selected-tab-fill: #ffffff;
     swt-unselected-tabs-color: #f3f3f3;
     swt-selected-tab-highlight:#ffffff;
@@ -147,6 +150,18 @@ CTabFolder.EditorStack.MPartStack.active {
     swt-outer-keyline-color: #f3f3f3;
 }
 
+#org-eclipse-ui-editorss CTabFolder Canvas,
+#org-eclipse-ui-editorss CTabFolder Composite {
+    background-color: #ffffff;
+}
+
+#org-eclipse-ui-editorss CTabFolder CTabItem,
+#org-eclipse-ui-editorss CTabFolder CTabItem CLabel {
+    background-color: #f3f3f3;
+}
+/* --------------------------------------- */
+
+/* editors like pom editor and plugin manifest */
 #org-eclipse-e4-ui-compatibility-editor CTabFolder[style~='SWT.DOWN'][style~='SWT.BOTTOM'],
 #org-eclipse-e4-ui-compatibility-editor CTabFolder[style~='SWT.DOWN'][style~='SWT.BOTTOM'] {
     swt-selected-tab-fill: #ffffff;
@@ -157,10 +172,16 @@ CTabFolder.EditorStack.MPartStack.active {
     swt-unselected-hot-tab-color-background: #ffffff;
     swt-outer-keyline-color: #fffffe; /* hack to remove the diagonal line when tabs run out of space */
     swt-selected-tab-highlight:#414241;
-    background-color: #ffffff;
 }
 
-.MPart.View CTabFolder[style~='SWT.TOP'] { /* TM Terminal tabs or similar */
+#org-eclipse-e4-ui-compatibility-editor CTabFolder CTabItem CLabel, 
+#org-eclipse-e4-ui-compatibility-editor CTabFolder CTabItem {
+    background-color: #ffffff;
+}
+/* --------------------------------------- */
+
+/* TM Terminal tabs or similar */
+.MPart.View CTabFolder[style~='SWT.TOP'] { 
     swt-selected-tab-fill: #ffffff;
     swt-unselected-tabs-color: #ffffff;
     swt-selected-tab-highlight:#ffffff;
@@ -172,11 +193,25 @@ CTabFolder.EditorStack.MPartStack.active {
     background-color: #ffffff;
     swt-selected-highlight-top: false;
 }
+ 
+.MPart.View CTabItem,
+.MPart.View CTabItem CLabel {
+    background-color: #ffffff;
+}
+/* --------------------------------------- */
+
+/* split editors stack */
+#org-eclipse-ui-editorss CTabFolder.MArea {
+    swt-tab-height: 6px;
+}
+/* --------------------------------------- */
 
 
-#org-eclipse-e4-ui-compatibility-editor CTabItem CLabel, 
-#org-eclipse-e4-ui-compatibility-editor CTabItem {
-    background-color: inherit;
+.MPart SashForm,
+.MPart Section {
+    background-color-titlebar: #ffffff;
+    background-color-gradient-titlebar: #ffffff;
+    background-color: #ffffff;
 }
 
 .MPartStack Form,
@@ -187,28 +222,6 @@ CTabFolder.EditorStack.MPartStack.active {
     border-color-titlebar: #ffffff;
     h-bottom-keyline-1-color: #ffffff;
     h-bottom-keyline-2-color: #f3f3f3;
-}
-
-CTabFolder.EditorStack.MPartStack,
-CTabFolder.EditorStack.MPartStack Canvas,
-CTabFolder.EditorStack.MPartStack Composite {
-    background-color: #ffffff;
-}
-
-CTabFolder.EditorStack.MPartStack CTabItem,
-CTabFolder.EditorStack.MPartStack CTabItem CLabel {
-    background-color: #f3f3f3;
-}
-
-
-.MPartStack CTabItem,
-.MPartStack CTabItem CLabel {
-    background-color: #ffffff;
-}
-
-CTabFolder.MArea CTabItem, 
-CTabFolder.MArea CTabItem CLabel {
-    background-color: #ffffff;  
 }
 
 #org-eclipse-ui-trim-status.MTrimBar * {
