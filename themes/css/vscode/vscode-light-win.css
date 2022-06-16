@@ -6,6 +6,11 @@ FontDefinition#org-gap-eclipse-themes-SOUREC_EDITOR_FONT {
   font-size: 12px;
 }
 
+FontDefinition#org-gap-eclipse-themes-SOUREC_POPUP_FONT {
+  font-family: 'Consolas';
+  font-size: 10px;
+}
+
 FontDefinition#org-gap-eclipse-themes-CONSOLE_FONT {
   font-family: 'Consolas';
   font-size: 12px;

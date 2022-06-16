@@ -4,6 +4,7 @@ ThemesExtension {
         '#org-gap-eclipse-themes-VIEW_TITLE_FONT_NORMAL',
         '#org-gap-eclipse-themes-STATUS_FONT',
         '#org-gap-eclipse-themes-SOUREC_EDITOR_FONT',
+        '#org-gap-eclipse-themes-SOUREC_POPUP_FONT',
         '#org-gap-eclipse-themes-CONSOLE_FONT';
     color-definition:
         '#org-gap-eclipse-themes-POPUP_BG_COLOR',
@@ -57,7 +58,7 @@ Shell[style~='SWT.RESIZE'][title=''] Tree { /* AbstractInformationControl, may b
 }
 
 Shell[style~='SWT.ON_TOP'] StyledText { /* Inspect popup value font */ 
-    font: '#org-gap-eclipse-themes-SOUREC_EDITOR_FONT';
+    font: '#org-gap-eclipse-themes-SOUREC_POPUP_FONT';
 }
 
 Shell Tree, Shell Table, Shell List,
