@@ -1,7 +1,18 @@
+CTabFolder {
+    swt-tab-renderer: url('bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.CTabRendering');
+    swt-selected-tab-fill: #ffffff;
+    swt-unselected-tabs-color: '#org-gap-eclipse-themes-CONTROL_BG_COLOR';
+    swt-selected-tab-highlight: '#org-gap-eclipse-themes-CONTROL_BG_COLOR';
+    swt-tab-outline:'#org-gap-eclipse-themes-CONTROL_BG_COLOR';
+    swt-selected-tab-highlight: #ffffff;
+    swt-selected-highlight-top: false;
+    swt-outer-keyline-color: '#org-gap-eclipse-themes-CONTROL_BG_COLOR';
+    swt-unselected-hot-tab-color-background: '#org-gap-eclipse-themes-CONTROL_BG_COLOR';
+}
+
 CTabFolder.MPartStack,
 .MPartStack CTabFolder[style~='SWT.DOWN'][style~='SWT.BOTTOM'],
 .MPart.View CTabFolder[style~='SWT.TOP'] {
-    swt-tab-renderer: url('bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.CTabRendering');
     font-family: '#org-gap-eclipse-themes-VIEW_TITLE_FONT_NORMAL';
     swt-tab-height: 24px;
 }
