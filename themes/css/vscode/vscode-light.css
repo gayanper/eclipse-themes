@@ -48,7 +48,8 @@ ToolBar {
 }
 
 Shell[style~='SWT.ON_TOP'][style~='SWT.DROP_DOWN'],
-Shell[style~='SWT.ON_TOP'][style~='SWT.NO_TRIM'] { /* parameter info popup */
+Shell[style~='SWT.RESIZE'] /* for lsp4e popups */,
+Shell[style~='SWT.ON_TOP'][style~='SWT.NO_TRIM'] /* parameter info popup */ { 
     background-color: '#org-gap-eclipse-themes-POPUP_BG_COLOR';
 }
 
@@ -58,7 +59,8 @@ Shell[style~='SWT.ON_TOP'][title=''] StyledText,
 Shell[style~='SWT.ON_TOP'][title=''] Label,
 Shell[style~='SWT.ON_TOP'][title=''] Composite,
 Shell[style~='SWT.ON_TOP'][title=''] Browser,
-Shell[style~='SWT.RESIZE'][title=''] Tree { /* AbstractInformationControl, may be the resize style might not needed */
+Shell[style~='SWT.RESIZE'][title=''] Tree /* AbstractInformationControl, may be the resize style might not needed */,
+Shell[style~='SWT.RESIZE'] FilteredTree * /* lsp4e symbole style */{ 
     background-color: inherit;
 }
 
