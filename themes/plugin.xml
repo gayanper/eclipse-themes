@@ -10,6 +10,12 @@
             os="macosx">
       </theme>
       <theme
+            basestylesheeturi="css/vscode/vscode-dark-mac.css"
+            id="org.gap.themes.vscode.dark"
+            label="VSCode Dark"
+            os="macosx">
+      </theme>
+      <theme
             basestylesheeturi="css/vscode/vscode-light-win.css"
             id="org.gap.themes.vscode.light"
             label="VSCode Light"
@@ -25,6 +31,12 @@
             basestylesheeturi="css/vscode/pre-24/vscode-light-win.css"
             id="org.gap.themes.vscode.light.pre"
             label="VSCode Light (Pre 2022-06)"
+            os="win32">
+      </theme>
+      <theme
+            basestylesheeturi="css/vscode/vscode-dark-win.css"
+            id="org.gap.themes.vscode.dark"
+            label="VSCode Dark"
             os="win32">
       </theme>
    </extension>

@@ -9,7 +9,12 @@ ThemesExtension {
     color-definition:
         '#org-gap-eclipse-themes-POPUP_BG_COLOR',
         '#org-gap-eclipse-themes-CONTROL_BG_COLOR',
-        '#org-gap-eclipse-themes-PRIMARY_VIEW_BG_COLOR';
+        '#org-gap-eclipse-themes-CONTROL_FG_COLOR',
+        '#org-gap-eclipse-themes-PRIMARY_VIEW_BG_COLOR',
+        '#org-gap-eclipse-themes-TAB_SELECTED_TEXT_COLOR',
+        '#org-gap-eclipse-themes-TAB_UNSELECTED_TEXT_COLOR'
+        '#org-gap-eclipse-themes-TAB_SELECTED_COLOR',
+        '#org-gap-eclipse-themes-TAB_UNSELECTED_COLOR';
 }
 
 ColorDefinition#org-eclipse-ui-workbench-ACTIVE_TAB_TEXT_COLOR {
@@ -27,8 +32,23 @@ ColorDefinition#org-gap-eclipse-themes-PRIMARY_VIEW_BG_COLOR {
 ColorDefinition#org-gap-eclipse-themes-CONTROL_BG_COLOR {
     color: #ececec;
 }
+ColorDefinition#org-gap-eclipse-themes-CONTROL_FG_COLOR {
+    color: #000000;
+}
 ColorDefinition#org-gap-eclipse-themes-POPUP_BG_COLOR {
     color: rgb(243, 243, 243);
+}
+ColorDefinition#org-gap-eclipse-themes-TAB_SELECTED_COLOR {
+    color: #ffffff;
+}
+ColorDefinition#org-gap-eclipse-themes-TAB_UNSELECTED_COLOR {
+    color: #ececec;
+}
+ColorDefinition#org-gap-eclipse-themes-TAB_SELECTED_TEXT_COLOR {
+    color: #101010;
+}
+ColorDefinition#org-gap-eclipse-themes-TAB_UNSELECTED_TEXT_COLOR {
+    color: #181818;
 }
 
 FontDefinition#org-eclipse-jface-textfont,
@@ -44,7 +64,7 @@ FontDefinition#org-eclipse-debug-ui-consoleFont {
 }
 
 ToolBar {
-    background-color:inherit;	
+    background-color:inherit;   
 }
 
 Shell[style~='SWT.ON_TOP'][style~='SWT.DROP_DOWN'],
@@ -315,4 +335,3 @@ IEclipsePreferences#org-eclipse-jdt-ui:org-gap-eclipse-themes {
     'semanticHighlighting.staticMethodInvocation.color=121,94,38'
     'org.eclipse.jdt.ui.Javadoc.backgroundColor=243,243,243';
 }
-

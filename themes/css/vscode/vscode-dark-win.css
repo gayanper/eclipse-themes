@@ -1,0 +1,29 @@
+@import url("platform:/plugin/org.gap.eclipse.themes/css/vscode/tabstyles.css");
+@import url("platform:/plugin/org.gap.eclipse.themes/css/vscode/vscode-dark.css");
+
+FontDefinition#org-gap-eclipse-themes-SOUREC_EDITOR_FONT {
+  font-family: 'Consolas';
+  font-size: 12px;
+}
+
+FontDefinition#org-gap-eclipse-themes-SOUREC_POPUP_FONT {
+  font-family: 'Consolas';
+  font-size: 10px;
+}
+
+FontDefinition#org-gap-eclipse-themes-CONSOLE_FONT {
+  font-family: 'Consolas';
+  font-size: 12px;
+}
+
+FontDefinition#org-gap-eclipse-themes-VIEW_TITLE_FONT_NORMAL {
+  font-size: 9px;
+}
+
+FontDefinition#org-gap-eclipse-themes-STATUS_FONT {
+  font-size: 9px;
+}
+
+FontDefinition#org-gap-eclipse-themes-VIEW_TITLE_FONT_SMALL {
+  font-size: 8px;
+}
