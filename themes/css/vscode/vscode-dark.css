@@ -403,7 +403,8 @@ IEclipsePreferences#org-eclipse-ui-workbench:org-gap-eclipse-themes {
     'org.eclipse.egit.ui.IgnoredResourceBackgroundColor=37,37,38'
     'org.eclipse.egit.ui.IgnoredResourceForegroundColor=120,120,120'
     'org.eclipse.egit.ui.UncommittedChangeBackgroundColor=37,37,38'
-    'org.eclipse.egit.ui.UncommittedChangeForegroundColor=114,157,186';
+    'org.eclipse.egit.ui.UncommittedChangeForegroundColor=114,157,186'
+    'org.eclipse.egit.ui.CommitMessageCommentColor=190,190,190';
 }
 
 IEclipsePreferences#org-eclipse-ui-editors:org-gap-eclipse-themes {
@@ -414,6 +415,8 @@ IEclipsePreferences#org-eclipse-ui-editors:org-gap-eclipse-themes {
     'AbstractTextEditor.Color.SelectionForeground.SystemDefault=false'
     'AbstractTextEditor.Color.SelectionForeground=255,255,255'
     'AbstractTextEditor.Color.Background=30,30,30'
+    'AbstractTextEditor.Color.Foreground=190,190,190'
+    'AbstractTextEditor.Color.Foreground.SystemDefault=false'
     'AbstractTextEditor.Color.SelectionBackground=179,215,255'
     'AbstractTextEditor.Color.FindScope=30,120,155'
     'asOccurencesIndicationColor=72,72,72'
